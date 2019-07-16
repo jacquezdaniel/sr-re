@@ -48,13 +48,13 @@ class Image extends React.Component {
   renderImageUpdateModalContent = () => {
     return (
       <form className="file-update-form">
-        {/* <label htmlFor="alt">Image alt attribute</label>
+        <label htmlFor="alt">Image alt attribute</label>
         <input
           name="alt"
           type="text"
           onChange={this.handleAltInputChange}
           value={this.state.alt}
-        /> */}
+        />
         <label htmlFor="caption">Image caption</label>
         <textarea
           name="caption"
@@ -89,26 +89,7 @@ class Image extends React.Component {
             onLoad={this.onLoad}
           />
           <figcaption>{this.props.file.metadata.caption}</figcaption>
-          <div className="image-options">
-            <small className="option" onClick={this.toggleImageUpdateModal}>
-              edit
-            </small>
-            <small>&nbsp;|&nbsp;</small>
-            <small
-              className="option"
-              onClick={() => this.props.deleteFile(this.props.file.filename)}
-            >
-              delete
-            </small>
-          </div>
         </div>
-        {this.state.imageUpdateToggle ? (
-          <Modal
-            onDismiss={this.toggleImageUpdateModal}
-            title="Edit Image Info"
-            content={this.renderImageUpdateModalContent()}
-          />
-        ) : null}
       </>
     );
   }
