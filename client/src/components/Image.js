@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteFile, updateFile } from "../actions";
-import Modal from "./Modal";
 import "./styles/Image.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
