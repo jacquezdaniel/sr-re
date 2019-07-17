@@ -42,7 +42,7 @@ export default function Navbar() {
           <Link to="gallery">Gallery</Link>
         </li>
         <li>
-          <Link to="contact">Contact Us</Link>
+          <Link to="contact">Contact</Link>
         </li>
       </ul>
     </>

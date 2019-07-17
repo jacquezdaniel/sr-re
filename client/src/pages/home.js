@@ -32,13 +32,8 @@ class home extends Component {
               }
             >
               <Caption>
-                <h3>Superior Replacement</h3>
-                <p className="light grey-text text-lighten-3">
-                  Praesent nec mauris ultricies, elementum lorem non, tempus mi.
-                  placerat quis ullamcorper quis, fringilla eget ligula.
-                  Suspendisse quis porta arcu, a dapibus massa. Sed at rhoncus
-                  est.
-                </p>
+                {/* <h3>Superior Replacement</h3> */}
+                <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
             <Slide
@@ -50,17 +45,8 @@ class home extends Component {
               }
             >
               <Caption placement="left">
-                <h3>Superior Replacement</h3>
-                <p className="light grey-text text-lighten-3">
-                  Praesent nec mauris ultricies, elementum lorem non, tempus mi.
-                  interdum dolor ac auctor. Etiam eu arcu odio. Pellentesque sed
-                  quam nec massa aliquet tincidunt nec non mi. Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit. Mauris elit ipsum,
-                  pulvinar vitae dictum vel, hendrerit eget nisl. Ut nunc erat,
-                  placerat quis ullamcorper quis, fringilla eget ligula.
-                  Suspendisse quis porta arcu, a dapibus massa. Sed at rhoncus
-                  est.
-                </p>
+                {/* <h3>Superior Replacement</h3> */}
+                <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
             <Slide
@@ -72,15 +58,8 @@ class home extends Component {
               }
             >
               <Caption placement="right">
-                <h3>Superior Replacement</h3>
-                <p className="light grey-text text-lighten-3">
-                  Praesent nec mauris ultricies, elementum lorem non, tempus mi.
-                  Nunc tristique, metus id facilisis blandit, massa metus ornare
-                  mauris, ut finibus elit tellus at eros. Donec eu pellentesque
-                  enim. Phasellus vel faucibus tellus. Quisque vel orci
-                  vulputate, ullamcorper orci at, gravida nisi. Vivamus ut erat
-                  lobortis, aliquam felis at, suscipit libero.
-                </p>
+                {/* <h3>Superior Replacement</h3> */}
+                <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
             <Slide
@@ -92,13 +71,8 @@ class home extends Component {
               }
             >
               <Caption>
-                <h3>Superior Replacement</h3>
-                <p className="light grey-text text-lighten-3">
-                  Praesent nec mauris ultricies, elementum lorem non, tempus mi.
-                  Nunc tristique, metus id facilisis blandit, massa metus ornare
-                  mauris, ut finibus elit tellus at eros. Donec eu pellentesque
-                  est.
-                </p>
+                {/* <h3>Superior Replacement</h3> */}
+                <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
           </Slider>
@@ -114,18 +88,9 @@ class home extends Component {
                 }
                 actions={[<a />]}
               >
-                Aliquam laoreet facilisis felis at finibus. Quisque viverra
-                scelerisque risus, ut posuere sapien. Vestibulum aliquet
-                tincidunt sem vel scelerisque. Nulla ligula ligula, gravida
-                vitae risus volutpat, pulvinar tincidunt purus. Phasellus ut
-                finibus justo. Praesent elementum mauris quam, quis hendrerit
-                nulla dictum quis. Donec feugiat ipsum in purus egestas, eget
-                eleifend urna sollicitudin. Sed viverra ullamcorper tincidunt.
-                Vivamus malesuada eros quis purus consequat, vitae lobortis sem
-                pretium. Donec in laoreet quam, at sollicitudin ligula. Aliquam
-                dignissim justo sit amet odio tempus, vel viverra neque auctor.
-                Nullam nisl nulla, tristique id semper in, facilisis at ex. Sed
-                ut nunc condimentum, fermentum odio ac, sollicitudin nibh.
+                Serving the Inland Empire, Los Angeles, San Bernardino and
+                Orange Counties. For ADAS calibrations mechanical pigtail and
+                wire repair A/C service.
               </Card>
             </Col>
             <Col m={4} s={12}>
@@ -135,18 +100,10 @@ class home extends Component {
                 }
                 actions={[<a />]}
               >
-                Aliquam laoreet facilisis felis at finibus. Quisque viverra
-                scelerisque risus, ut posuere sapien. Vestibulum aliquet
-                tincidunt sem vel scelerisque. Nulla ligula ligula, gravida
-                vitae risus volutpat, pulvinar tincidunt purus. Phasellus ut
-                finibus justo. Praesent elementum mauris quam, quis hendrerit
-                nulla dictum quis. Donec feugiat ipsum in purus egestas, eget
-                eleifend urna sollicitudin. Sed viverra ullamcorper tincidunt.
-                Vivamus malesuada eros quis purus consequat, vitae lobortis sem
-                pretium. Donec in laoreet quam, at sollicitudin ligula. Aliquam
-                dignissim justo sit amet odio tempus, vel viverra neque auctor.
-                Nullam nisl nulla, tristique id semper in, facilisis at ex. Sed
-                ut nunc condimentum, fermentum odio ac, sollicitudin nibh.
+                At Superior Replacement we aim to provide guaranteed customer
+                satisfaction. Our motive is to provide a high level quality of
+                service. You can trust us to make fast turnarounds so you can be
+                back on the road in no time.
               </Card>
             </Col>
             <Col m={4} s={12}>
@@ -156,18 +113,8 @@ class home extends Component {
                 }
                 actions={[<a />]}
               >
-                Aliquam laoreet facilisis felis at finibus. Quisque viverra
-                scelerisque risus, ut posuere sapien. Vestibulum aliquet
-                tincidunt sem vel scelerisque. Nulla ligula ligula, gravida
-                vitae risus volutpat, pulvinar tincidunt purus. Phasellus ut
-                finibus justo. Praesent elementum mauris quam, quis hendrerit
-                nulla dictum quis. Donec feugiat ipsum in purus egestas, eget
-                eleifend urna sollicitudin. Sed viverra ullamcorper tincidunt.
-                Vivamus malesuada eros quis purus consequat, vitae lobortis sem
-                pretium. Donec in laoreet quam, at sollicitudin ligula. Aliquam
-                dignissim justo sit amet odio tempus, vel viverra neque auctor.
-                Nullam nisl nulla, tristique id semper in, facilisis at ex. Sed
-                ut nunc condimentum, fermentum odio ac, sollicitudin nibh.
+                We offer a wide range of services in our shop as well as mobile
+                services.
               </Card>
             </Col>
           </div>

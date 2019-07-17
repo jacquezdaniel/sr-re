@@ -46,7 +46,10 @@ class contact extends Component {
     return (
       <Container>
         <div className="App">
-          <p>Contact Us</p>
+          <h5>Contact Us</h5>
+          <br />
+          <br />
+
           <div>
             <form
               name="contact-form"
