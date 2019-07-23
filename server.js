@@ -1,5 +1,5 @@
 const express = require("express");
-var enforce = require("express-sslify");
+const enforce = require("express-sslify");
 const path = require("path");
 const logger = require("morgan");
 const mongoose = require("mongoose");
