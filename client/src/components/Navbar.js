@@ -26,6 +26,9 @@ export default function Navbar() {
                   <Link to="gallery">Gallery</Link>
                 </li>
                 <li>
+                  <Link to="positionstatements">Position Statements</Link>
+                </li>
+                <li>
                   <Link to="contact">Contact Us</Link>
                 </li>
               </ul>
@@ -40,6 +43,9 @@ export default function Navbar() {
         </li>
         <li>
           <Link to="gallery">Gallery</Link>
+        </li>
+        <li>
+          <Link to="positionstatements">Position Statements</Link>
         </li>
         <li>
           <Link to="contact">Contact</Link>

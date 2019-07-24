@@ -43,10 +43,26 @@ router.get("/:filename", (req, res) => {
 // @route POST /files/upload
 // @desc Uploads a file to the DB
 router.post("/upload", upload.single("file"), (req, res) => {
-  gfs.files.update(
+  gfs.files.updateOne(
     { _id: req.file.id },
     {
       $set: { metadata: { caption: req.file.filename, alt: req.file.filename } }
+    },
+    (err, file) => {
+      gfs.files.findOne({ filename: req.file.filename }, (err, file) => {
+        return res.json(file);
+      });
+    }
+  );
+});
+
+router.post("/pdf", upload.single("file"), (req, res) => {
+  gfs.files.updateOne(
+    { _id: req.file.id },
+    {
+      $set: {
+        metadata: { title: req.file.filename, content: req.file.filename }
+      }
     },
     (err, file) => {
       gfs.files.findOne({ filename: req.file.filename }, (err, file) => {

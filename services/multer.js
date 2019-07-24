@@ -7,6 +7,7 @@ const keys = require("../config/keys");
 // Create Storage Engine
 const storage = new GridFsStorage({
   url: keys.MONGO_URI,
+  cache: "1",
   file: (req, file) => {
     return new Promise((resolve, reject) => {
       // Create a unique 16 character filname

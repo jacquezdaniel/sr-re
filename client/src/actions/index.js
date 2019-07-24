@@ -1,5 +1,11 @@
 import files from "../apis/filesApi";
-import { GET_FILES, UPLOAD_FILE, UPDATE_FILE, DELETE_FILE } from "./types";
+import {
+  GET_FILES,
+  UPLOAD_FILE,
+  PDFUPLOAD_FILE,
+  UPDATE_FILE,
+  DELETE_FILE
+} from "./types";
 
 export const getFiles = () => async dispatch => {
   const response = await files.get("/");
@@ -15,6 +21,15 @@ export const uploadFile = formData => async dispatch => {
 
   dispatch({
     type: UPLOAD_FILE,
+    payload: response.data
+  });
+};
+
+export const pdfUpload = formData => async dispatch => {
+  const response = await files.post("/pdf", formData);
+
+  dispatch({
+    type: PDFUPLOAD_FILE,
     payload: response.data
   });
 };

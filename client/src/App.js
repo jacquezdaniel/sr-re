@@ -10,6 +10,7 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Services from "./pages/services";
 import Gallery from "./pages/gallery";
+import positionStatement from "./pages/positionStatement";
 import { createStore, applyMiddleware, compose } from "redux";
 import { Provider } from "react-redux";
 import ReduxThunk from "redux-thunk";
@@ -29,6 +30,7 @@ function App() {
         <Navbar />
         <Route exact path="/" component={Home} />
         <Route exact path="/services" component={Services} />
+        <Route exact path="/positionstatements" component={positionStatement} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/gallery" component={Gallery} />
       </Router>
