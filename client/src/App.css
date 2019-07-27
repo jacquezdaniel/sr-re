@@ -28,7 +28,7 @@ nav #nav-menu {
 }
 
 nav #nav-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: #e0e0e0;
 }
 nav {
   background-color: transparent !important;

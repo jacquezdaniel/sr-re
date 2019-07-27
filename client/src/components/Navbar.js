@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <div class="navbar black">
         <nav>
-          <div className="nav-wrapper black">
+          <div className="nav-wrapper">
             <div className="container">
               <Link to="/" class="brand-logo">
                 <img src="images/logo.jpg" width="150" height="64" alt="" />

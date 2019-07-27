@@ -11,7 +11,8 @@ class contact extends Component {
     this.state = {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      disableButton: true
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -19,7 +20,7 @@ class contact extends Component {
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value, disableButton: false });
   };
 
   async handleSubmit(e) {
@@ -27,7 +28,8 @@ class contact extends Component {
     this.setState({
       name: "",
       email: "",
-      message: ""
+      message: "",
+      disableButton: true
     });
 
     const { name, email, message } = this.state;
@@ -93,6 +95,7 @@ class contact extends Component {
               <textarea
                 id="message"
                 name="message"
+                class="validate"
                 required
                 value={this.state.message}
                 placeholder="Your Message.."
@@ -100,7 +103,7 @@ class contact extends Component {
               />
               <button
                 class="btn waves-effect waves-light indigo accent-4"
-                disabled={!this.state}
+                disabled={this.state.disableButton}
                 name="action"
                 type="submit"
                 value="Submit"

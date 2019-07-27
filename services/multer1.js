@@ -18,13 +18,13 @@ const storage = new GridFsStorage({
         const filename = buf.toString("hex") + path.extname(file.originalname);
         const fileInfo = {
           filename: filename,
-          bucketName: "uploads" //should match gfs.collection
+          bucketName: "pdf" //should match gfs.collection
         };
         resolve(fileInfo);
       });
     });
   }
 });
-const upload = multer({ storage });
+const pUpload = multer({ storage });
 
-module.exports = upload;
+module.exports = pUpload;

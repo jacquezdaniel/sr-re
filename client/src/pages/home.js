@@ -79,7 +79,7 @@ class home extends Component {
         </div>
         <br />
         <br />
-        <div className="section no-pad-bot z-depth-5">
+        <div className="section blue darken-4 no-pad-bot z-depth-5">
           <div className="row">
             <Col m={4} s={12}>
               <Card

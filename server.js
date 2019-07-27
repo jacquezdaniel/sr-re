@@ -26,7 +26,7 @@ mongoose
   .connect(keys.MONGO_URI, {
     useNewUrlParser: true
   })
-  .then(() => console.log("MongoDB Connected"))
+  .then(() => console.log("MongoDB Atlas Connected"))
   .catch(err => console.log(err));
 
 // Add routes for API and for database.

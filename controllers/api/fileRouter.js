@@ -1,11 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const upload = require("../../services/multer");
+const pdfss = require("../../services/multer1");
 const Grid = require("gridfs-stream");
+const Grid1 = require("gridfs-stream");
 const mongoose = require("mongoose");
 
 // Reference Mongo connection
 const conn = mongoose.connection;
+const conn1 = mongoose.connection;
 
 // Initialize gfs
 let gfs;
@@ -14,6 +17,13 @@ let gfs;
 conn.once("open", () => {
   gfs = Grid(conn.db, mongoose.mongo);
   gfs.collection("uploads");
+});
+
+let pdfs;
+
+conn1.once("open", () => {
+  pdfs = Grid1(conn.db, mongoose.mongo);
+  pdfs.collection("pdf");
 });
 
 // @route GET /files
@@ -56,8 +66,8 @@ router.post("/upload", upload.single("file"), (req, res) => {
   );
 });
 
-router.post("/pdf", upload.single("file"), (req, res) => {
-  gfs.files.updateOne(
+router.post("/pdf", pdfss.single("file"), (req, res) => {
+  pdfs.files.updateOne(
     { _id: req.file.id },
     {
       $set: {
@@ -65,7 +75,7 @@ router.post("/pdf", upload.single("file"), (req, res) => {
       }
     },
     (err, file) => {
-      gfs.files.findOne({ filename: req.file.filename }, (err, file) => {
+      pdfs.files.findOne({ filename: req.file.filename }, (err, file) => {
         return res.json(file);
       });
     }
