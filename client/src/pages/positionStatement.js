@@ -13,7 +13,7 @@ const positionStatement = () => {
             textClassName="white-text"
             title="American Honda Position Statement"
             actions={[
-              <a href="pstatement/Honda-Acura_Pos_Vehicle-Scans(7-16).pdf">
+              <a href="positionstatement/Honda-Acura_Pos_Vehicle-Scans(7-16).pdf">
                 Honda
               </a>
             ]}
@@ -27,7 +27,7 @@ const positionStatement = () => {
             textClassName="white-text"
             title="Honda ADAS Systems"
             actions={[
-              <a href="pstatement/HONDAADASPresentation.pdf">
+              <a href="positionstatement/HONDAADASPresentation.pdf">
                 Honda ADAS Systems
               </a>
             ]}
@@ -41,7 +41,7 @@ const positionStatement = () => {
             textClassName="white-text"
             title="INFINITI USA"
             actions={[
-              <a href="INFINITI_Pos_Pre-Post-Scan_Revised(10-3-16).pdf">
+              <a href="positionstatement/INFINITI_Pos_Pre-Post-Scan_Revised(10-3-16).pdf">
                 INFINITI
               </a>
             ]}
@@ -55,7 +55,7 @@ const positionStatement = () => {
             textClassName="white-text"
             title="Nissan"
             actions={[
-              <a href="NISSAN RADAR CALIBRATION STATEMENT.pdf">
+              <a href="positionstatement/NISSAN RADAR CALIBRATION STATEMENT.pdf">
                 Nissan Radar Calibration Statement
               </a>
             ]}
@@ -67,7 +67,7 @@ const positionStatement = () => {
             textClassName="white-text"
             title="Honda ADAS Systems"
             actions={[
-              <a href="pstatement/HONDAADASPresentation.pdf">
+              <a href="positionstatement/HONDAADASPresentation.pdf">
                 Honda ADAS Systems
               </a>
             ]}
