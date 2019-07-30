@@ -15,6 +15,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { Provider } from "react-redux";
 import ReduxThunk from "redux-thunk";
 import reducers from "./reducers";
+// import { model } from "mongoose";
 
 // Enable Redux devTools and create Redux store
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
