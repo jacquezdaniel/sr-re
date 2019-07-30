@@ -7,7 +7,7 @@ const positionStatement = () => {
       <br />
       <div className="container"></div>
       <Row>
-        <Col m={6} s={6}>
+        <Col m={12} s={12}>
           <Card
             className="black"
             textClassName="white-text"
@@ -49,7 +49,7 @@ const positionStatement = () => {
             INFINITI Pre Post Scan
           </Card>
         </Col>{" "}
-        <Col m={6} s={6}>
+        <Col m={12} s={12}>
           <Card
             className="black"
             textClassName="white-text"
@@ -91,7 +91,7 @@ const positionStatement = () => {
             Automated Driver Assist Systems
           </Card>
         </Col>
-        <Col m={6} s={6}>
+        {/* <Col m={6} s={6}>
           <Card
             className="blue"
             textClassName="white-text"
@@ -195,7 +195,7 @@ const positionStatement = () => {
             {" "}
             Automated Driver Assist Systems
           </Card>
-        </Col>
+        </Col> */}
       </Row>
     </>
   );
