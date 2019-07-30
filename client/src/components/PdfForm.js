@@ -1,16 +1,26 @@
 import React from "react";
 import { connect } from "react-redux";
-import { pdfUpload } from "../actions";
+import { getFiles, pdfUpload } from "../actions";
 // import "./styles/UploadForm.css";
 
-class PdfForm extends React.Component {
-  state = {
-    selectedFile: null,
-    fileName: "", // Used to update the file Input's label
-    disableButton: true, // Used to toggle disables attribute of the submit button
-    inputKey: Date.now() // Used to re-render the file input on submit and validation
+class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedFile: null,
+      fileName: "", // Used to update the file Input's label
+      title: "",
+      content: "",
+      disableButton: true, // Used to toggle disables attribute of the submit button
+      inputKey: Date.now() // Used to re-render the file input on submit and validation
+    };
+  }
+  handleTitleInputChange = event => {
+    this.setState({ title: event.target.value });
   };
-
+  handleContentInputChange = event => {
+    this.setState({ content: event.target.value });
+  };
   // Updates the file input's label to reflect the current file that is loaded
   // Called from validateFile() and handleSubmit()
   updateLabel = file => {
@@ -66,6 +76,8 @@ class PdfForm extends React.Component {
     formData.append("file", this.state.selectedFile);
     this.props.pdfUpload(formData);
     this.setState({
+      title: "",
+      content: "",
       inputKey: Date.now(),
       disableButton: true
     });
@@ -75,6 +87,20 @@ class PdfForm extends React.Component {
   render() {
     return (
       <form id="file-upload-form">
+        <label htmlFor="title">Title</label>
+        <input
+          name="title"
+          type="text"
+          onChange={this.handleTitleInputChange}
+          value={this.state.title}
+        />
+        <label htmlFor="content">Pdf Content</label>
+        <textarea
+          name="content"
+          rows="2"
+          onChange={this.handleContentInputChange}
+          value={this.state.content}
+        ></textarea>
         <input
           id="fileInput"
           name="fileInput"
@@ -96,5 +122,8 @@ class PdfForm extends React.Component {
 
 export default connect(
   null,
-  { pdfUpload }
-)(PdfForm);
+  {
+    getFiles,
+    pdfUpload
+  }
+)(Form);

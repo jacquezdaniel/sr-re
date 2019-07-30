@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const upload = require("../../services/multer");
-const pdfss = require("../../services/multer1");
+const upload = require("../../services/galleryMulter");
+const pdfss = require("../../services/postionMulter");
 const Grid = require("gridfs-stream");
 const Grid1 = require("gridfs-stream");
 const mongoose = require("mongoose");
@@ -37,6 +37,14 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get("/", (req, res) => {
+  pdfs.files
+    .find()
+    .sort({ _id: -1 })
+    .toArray((err, files) => {
+      return res.json(files);
+    });
+});
 // @route GET /files/:filename
 // @desc Displays a specific files in json format
 router.get("/:filename", (req, res) => {
@@ -101,10 +109,40 @@ router.patch("/update/:filename", (req, res) => {
   );
 });
 
+router.patch("/update/:filename", (req, res) => {
+  pdfs.files.update(
+    { filename: req.params.filename },
+    {
+      $set: { metadata: { title: req.body.title, content: req.body.content } }
+    },
+    (err, file) => {
+      if (err) {
+        return res.status(404).json({
+          err: `${req.params.filename} was not updated`
+        });
+      }
+      pdfs.files.findOne({ filename: req.params.filename }, (err, file) => {
+        return res.json(file);
+      });
+    }
+  );
+});
+
 // @route DELETE /files/delete/:fileName
 // @desc Deletes a specific file by filename
 router.delete("/delete/:filename", (req, res) => {
   gfs.remove({ filename: req.params.filename, root: "uploads" }, err => {
+    if (err) {
+      return res.status(404).json({
+        err: `${req.params.filename} was not deleted`
+      });
+    }
+    res.json(req.params.filename);
+  });
+});
+
+router.delete("/delete/:filename", (req, res) => {
+  pdfs.remove({ filename: req.params.filename, root: "pdf" }, err => {
     if (err) {
       return res.status(404).json({
         err: `${req.params.filename} was not deleted`
@@ -135,6 +173,26 @@ router.get("/read/:filename", (req, res) => {
     } else {
       res.status(404).json({
         err: `${req.params.filename} is not an image`
+      });
+    }
+  });
+});
+
+router.get("/pdf/:filename", (req, res) => {
+  pdfs.files.findOne({ filename: req.params.filename }, (err, file) => {
+    if (!file || file.length === 0) {
+      return res.status(404).json({
+        err: `${req.params.filename} was not found`
+      });
+    }
+    // Check if file is an image
+    if (file.contentType === "application/pdf") {
+      // If so, ead Grid FS output to browser
+      const readstream = pdfs.createReadStream(file.filename);
+      readstream.pipe(res);
+    } else {
+      res.status(404).json({
+        err: `${req.params.filename} is not a pdf`
       });
     }
   });

@@ -14,4 +14,16 @@ const Modal = props => {
   );
 };
 
-export default Modal;
+const pdfModal = props => {
+  return ReactDOM.createPortal(
+    <div onClick={props.onDismiss} className="screen-overlay">
+      <div onClick={e => e.stopPropagation()} className="modal-window">
+        <h2 className="modal-header">{props.title}</h2>
+        <div className="modal-content">{props.content}</div>
+      </div>
+    </div>,
+    document.querySelector("#pdfModal")
+  );
+};
+
+export default { Modal, pdfModal };
