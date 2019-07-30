@@ -61,7 +61,7 @@ const positionStatement = () => {
             ]}
           ></Card>
         </Col>{" "}
-        <Col m={6} s={6}>
+        {/* <Col m={6} s={6}>
           <Card
             className="black"
             textClassName="white-text"
@@ -90,7 +90,7 @@ const positionStatement = () => {
             {" "}
             Automated Driver Assist Systems
           </Card>
-        </Col>
+        </Col> */}
         {/* <Col m={6} s={6}>
           <Card
             className="blue"
