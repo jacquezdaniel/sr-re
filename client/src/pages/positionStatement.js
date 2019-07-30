@@ -53,7 +53,7 @@ const positionStatement = () => {
           <Card
             className="black"
             textClassName="white-text"
-            title="Nissan"
+            title="Nissan Radar Calibration Statement"
             actions={[
               <a href="positionstatement/NISSAN RADAR CALIBRATION STATEMENT.pdf">
                 Nissan Radar Calibration Statement
@@ -61,134 +61,126 @@ const positionStatement = () => {
             ]}
           ></Card>
         </Col>{" "}
-        {/* <Col m={6} s={6}>
+        <Col m={6} s={6}>
           <Card
             className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="Nissan Radar Post Repair"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/Nissan Required Radar Recalibration Post-Repair.pdf">
+                Nissan Radar Recalibration
               </a>
             ]}
           >
-            {" "}
-            Automated Driver Assist Systems
+            Required Radar Recalibration Post-Repair
           </Card>
         </Col>
         <Col m={6} s={6}>
           <Card
             className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="Nissan Pre and Post Scanning"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/Nissan_Pos_Pre-and-Post-Scanning_2016_FINAL.pdf">
+                Nissan Pre and Post
               </a>
             ]}
           >
-            {" "}
-            Automated Driver Assist Systems
+            Pre- and Post-Repair System Scanning
           </Card>
-        </Col> */}
-        {/* <Col m={6} s={6}>
+        </Col>
+        <Col m={12} s={12}>
           <Card
-            className="blue"
+            className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="GM Service Information"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/pre-post-scan-collision-vehicles (1).pdf">
+                General Motors
               </a>
             ]}
           >
-            {" "}
-            Automated Driver Assist Systems
+            General Motors Position Statement
           </Card>
         </Col>{" "}
         <Col m={6} s={6}>
           <Card
-            className="blue"
+            className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="Subaru of America"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/Subaru_Pos_Pre-Post-Scanning(7-17).pdf">
+                Subaru
               </a>
             ]}
           >
-            {" "}
-            Automated Driver Assist Systems
+            Subaru Position Statement
           </Card>
         </Col>{" "}
         <Col m={6} s={6}>
           <Card
-            className="blue"
+            className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="Toyota Zero Point Calibration"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/toyota 0 point calibration.pdf">
+                Toyota
               </a>
             ]}
           >
-            {" "}
-            Automated Driver Assist Systems
+            ZERO POINT Calibration
+          </Card>
+        </Col>{" "}
+        <Col m={12} s={12}>
+          <Card
+            className="black"
+            textClassName="white-text"
+            title="Toyota Scanning For Electrical System Faults"
+            actions={[
+              <a href="positionstatement/toyota Scanning-for-Electrical-System-Faults.pdf">
+                Toyota Scanning
+              </a>
+            ]}
+          >
+            APPLICABLE VEHICLES: All Toyota, Lexus and Scion Models
           </Card>
         </Col>{" "}
         <Col m={6} s={6}>
           <Card
-            className="blue"
+            className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="VW Golf"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/VW ADAPTIVE CRUISE CONTROL.pdf">
+                VW Golf
               </a>
             ]}
           >
-            {" "}
-            Automated Driver Assist Systems
-          </Card>
-        </Col>{" "}
-        <Col m={6} s={6}>
-          <Card
-            className="blue"
-            textClassName="white-text"
-            title="Honda ADAS Systems"
-            actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
-              </a>
-            ]}
-          >
-            {" "}
-            Automated Driver Assist Systems
+            Adaptive Cruise Control
           </Card>
         </Col>
         <Col m={6} s={6}>
           <Card
-            className="blue"
+            className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="MBUSA Collision Position Statement"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/MBUSA_Pos_Diagnostic-Repairs-following-a-Collision(1-17).pdf">
+                Mercedes-Benz
               </a>
             ]}
           >
-            {" "}
-            Automated Driver Assist Systems
+            Diagnostic Repairs Following a Collision
           </Card>
         </Col>{" "}
-        <Col m={6} s={6}>
+        {/* <Col m={12} s={12}>
           <Card
-            className="blue"
+            className="black"
             textClassName="white-text"
-            title="Honda ADAS Systems"
+            title="Nissan Radar"
             actions={[
-              <a href="positionstatement/HONDAADASPresentation.pdf">
-                Honda ADAS Systems
+              <a href="positionstatement/Position Statement Aftermarket parts Final.pdf">
+                POSITION STATEMENT: Required Radar Recalibration Post-Repair
               </a>
             ]}
           >
