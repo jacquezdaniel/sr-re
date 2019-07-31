@@ -6,6 +6,7 @@ import "../node_modules/materialize-css/dist/js/materialize.min.js";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Services from "./pages/services";
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/positionstatements" component={positionStatement} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/gallery" component={Gallery} />
+        <Footer />
       </Router>
     </Provider>
   );
