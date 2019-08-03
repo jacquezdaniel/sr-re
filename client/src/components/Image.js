@@ -75,7 +75,7 @@ class Image extends React.Component {
 
     return (
       <>
-        <div data-aos="fade-up">
+        <div data-aos="zoom-in">
           <img
             style={style}
             src={`/files/read/${this.props.file.filename}`}
