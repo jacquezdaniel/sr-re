@@ -127,7 +127,6 @@ class home extends Component {
             </a>
           </p>
           <Parallax />
-          <br />
         </div>
         <br />
         <br />
