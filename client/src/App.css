@@ -11,7 +11,7 @@ body {
 }
 
 .App {
-  max-width: 420px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -44,10 +44,21 @@ nav {
 }
 
 .parallax-container {
-  height: 250px;
+  height: 500px;
 }
+
+.parallax img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    height: 150px;
+  }
+}
+
 .slider .indicators .indicator-item.active {
-  background-color: blue;
+  background-color: #0d47a1;
 }
 
 [data-reactroot] {

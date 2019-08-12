@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MapContainer from "../components/Map";
+import Parallax from "../components/Parallax";
 import {
   Slider,
   Caption,
@@ -8,14 +9,9 @@ import {
   CardTitle,
   Col
 } from "react-materialize";
-import M from "materialize-css";
 import "./home.css";
 
 class home extends Component {
-  componentDidMount() {
-    M.Parallax.init(this.Parallax1);
-  }
-
   render() {
     return (
       <>
@@ -121,15 +117,21 @@ class home extends Component {
         </div>
         <br />
         <br />
-        <div className="container">
-          <h4 className="center">
+        <div className="section z-depth-5">
+          <p className="center">
             Located at 2684 Market Street, Riverside, CA 92501
             <br />
             <br />
             <a href="https://www.google.com/maps?saddr&daddr=2684+Market+Street,+Riverside,+CA+92501">
               Click for directions
             </a>
-          </h4>
+          </p>
+          <Parallax />
+          <br />
+        </div>
+        <br />
+        <br />
+        <div className="container z-depth-5">
           <MapContainer />
         </div>
       </>

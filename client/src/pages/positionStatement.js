@@ -56,10 +56,12 @@ const positionStatement = () => {
               title="Nissan Radar Calibration Statement"
               actions={[
                 <a href="positionstatement/NISSAN RADAR CALIBRATION STATEMENT.pdf">
-                  Nissan Radar Calibration Statement
+                  Nissan
                 </a>
               ]}
-            ></Card>
+            >
+              Nissan Radar Calibration Statement
+            </Card>
           </Col>{" "}
           <Col m={6} s={6}>
             <Card
