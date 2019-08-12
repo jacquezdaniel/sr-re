@@ -117,7 +117,7 @@ class home extends Component {
         </div>
         <br />
         <br />
-        <div className="container z-depth-5">
+        <div className="container z-depth-3">
           <p className="center">
             Located at 2684 Market Street, Riverside, CA 92501
             <br />

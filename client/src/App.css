@@ -43,13 +43,9 @@ nav {
   }
 }
 
-.parallax-container {
-  height: 300px;
-}
-
 @media only screen and (max-width: 600px) {
   .parallax-container {
-    height: 175px;
+    height: 250px;
   }
 }
 
