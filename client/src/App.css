@@ -45,14 +45,10 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .parallax-container {
-    height: 250px;
+    height: 225px;
   }
 }
 
 .slider .indicators .indicator-item.active {
   background-color: #0d47a1;
-}
-
-[data-reactroot] {
-  height: 100% !important;
 }
