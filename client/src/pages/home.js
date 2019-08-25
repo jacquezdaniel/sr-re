@@ -122,6 +122,10 @@ class home extends Component {
             Located at 2684 Market Street, Riverside, CA 92501
             <br />
             <br />
+            Give us a call at 1-909-518-7269
+            <br />
+            <a className="fa fa-phone" href="tel:1-909-518-7269"></a>
+            <br />
             <a href="https://www.google.com/maps?saddr&daddr=2684+Market+Street,+Riverside,+CA+92501">
               Click for directions
             </a>
