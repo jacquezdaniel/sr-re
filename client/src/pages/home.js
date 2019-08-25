@@ -117,22 +117,28 @@ class home extends Component {
         </div>
         <br />
         <br />
-        <div className="container z-depth-3">
+
+        <div className="section">
+          <Parallax />
+        </div>
+        <br />
+        <br />
+
+        <div className="section z-depth-3">
           <p className="center">
-            Located at 2684 Market Street, Riverside, CA 92501
-            <br />
             <br />
             Give us a call at 1-909-518-7269
             <br />
             <a className="fa fa-phone" href="tel:1-909-518-7269"></a>
             <br />
+            Located at 2684 Market Street, Riverside, CA 92501
+            <br />
+            <br />
             <a href="https://www.google.com/maps?saddr&daddr=2684+Market+Street,+Riverside,+CA+92501">
               Click for directions
             </a>
           </p>
-        </div>
-        <div className="section">
-          <Parallax />
+          <br />
         </div>
         <br />
         <br />
