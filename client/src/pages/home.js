@@ -117,17 +117,17 @@ class home extends Component {
         </div>
         <br />
         <br />
-
         <div className="section">
           <Parallax />
         </div>
         <br />
         <br />
-
-        <div className="section z-depth-3">
+        <div className="container z-depth-3">
           <p className="center">
             <br />
-            Give us a call at 1-909-518-7269
+            Give us a call at
+            <br />
+            1-909-518-7269
             <br />
             <a className="fa fa-phone" href="tel:1-909-518-7269"></a>
             <br />
