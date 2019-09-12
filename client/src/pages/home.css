@@ -7,3 +7,9 @@
 a.fa.fa-phone {
   color: black;
 }
+
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    height: 200px;
+  }
+}
