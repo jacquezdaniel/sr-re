@@ -105,7 +105,7 @@ class home extends Component {
             <Col m={4} s={12}>
               <Card
                 header={
-                  <CardTitle image="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-8DD79S4/0/daf33f3f/X5/i-8DD79S4-X5.jpg" />
+                  <CardTitle image="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-95nPwdn/0/7a84a89d/XL/i-95nPwdn-XL.jpg" />
                 }
                 actions={[<a />]}
               >
