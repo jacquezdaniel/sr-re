@@ -17,7 +17,7 @@ class Parallax extends Component {
             }}
             className="parallax"
           >
-            <img src="/images/outside.jpg" alt="" />
+            <img src="/images/outside.png" alt="" />
           </div>
         </div>
       </>
