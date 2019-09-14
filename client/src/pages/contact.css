@@ -12,6 +12,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
+  position: relative;
   margin-bottom: 16px;
   resize: vertical;
   height: 250px;
@@ -19,4 +20,11 @@ textarea {
 
 label {
   font-size: 1rem;
+}
+
+#contact-form {
+  width: 80%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }

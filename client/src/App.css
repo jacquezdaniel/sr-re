@@ -10,11 +10,6 @@ body {
   min-height: 100vh;
 }
 
-.App {
-  max-width: 420px;
-  margin: 0 auto;
-}
-
 .button {
   padding-right: 10px;
 }

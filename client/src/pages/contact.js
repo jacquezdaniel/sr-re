@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import M from "materialize-css";
-import { Container } from "../components/Grid";
 import "./contact.css";
 
 class contact extends Component {
@@ -46,74 +45,72 @@ class contact extends Component {
 
   render() {
     return (
-      <Container>
-        <div className="App">
-          <h5>Contact Us</h5>
-          <br />
-          <br />
+      <div className="container">
+        {/* <h5>Contact Us</h5> */}
+        <br />
+        <br />
 
-          <div>
-            <form
-              name="contact-form"
-              id="contact-form"
-              onSubmit={this.handleSubmit.bind(this)}
-              method="POST"
+        <div id="contact-form" className="container">
+          <form
+            name="contact-form"
+            id="contact-form"
+            onSubmit={this.handleSubmit.bind(this)}
+            method="POST"
+          >
+            <i class="material-icons prefix">account_circle</i>
+            <label for="icon_prefix"></label>
+            <input
+              type="text"
+              id="icon_prefix"
+              name="name"
+              validate="true"
+              required
+              value={this.state.name}
+              placeholder="Full Name"
+              onChange={this.handleChange}
+            />
+            <i class="material-icons prefix">mail_outline</i>
+            <label for="icon_prefix"></label>
+            <input
+              type="email"
+              id="email"
+              class="validate"
+              name="email"
+              required
+              value={this.state.email}
+              placeholder="Your email.."
+              onChange={this.handleChange}
+            />
+            <span
+              class="helper-text"
+              data-error="Please Enter A Valid Email. ❌"
+              data-success="✔️"
+            ></span>
+            <br></br>
+            <br></br>
+            <i class="material-icons prefix">message</i>
+            <label for="icon_prefix"></label>
+            <textarea
+              id="message"
+              name="message"
+              class="validate"
+              required
+              value={this.state.message}
+              placeholder="Your Message.."
+              onChange={this.handleChange}
+            />
+            <button
+              class="btn waves-effect waves-light indigo accent-4"
+              disabled={this.state.disableButton}
+              name="action"
+              type="submit"
+              value="Submit"
             >
-              <i class="material-icons prefix">account_circle</i>
-              <label for="icon_prefix"></label>
-              <input
-                type="text"
-                id="icon_prefix"
-                name="name"
-                validate="true"
-                required
-                value={this.state.name}
-                placeholder="Full Name"
-                onChange={this.handleChange}
-              />
-              <i class="material-icons prefix">mail_outline</i>
-              <label for="icon_prefix"></label>
-              <input
-                type="email"
-                id="email"
-                class="validate"
-                name="email"
-                required
-                value={this.state.email}
-                placeholder="Your email.."
-                onChange={this.handleChange}
-              />
-              <span
-                class="helper-text"
-                data-error="Please Enter A Valid Email. ❌"
-                data-success="✔️"
-              ></span>
-              <br></br>
-              <br></br>
-              <i class="material-icons prefix">message</i>
-              <label for="icon_prefix"></label>
-              <textarea
-                id="message"
-                name="message"
-                class="validate"
-                required
-                value={this.state.message}
-                placeholder="Your Message.."
-                onChange={this.handleChange}
-              />
-              <button
-                class="btn waves-effect waves-light indigo accent-4"
-                disabled={this.state.disableButton}
-                name="action"
-                type="submit"
-                value="Submit"
-              >
-                <i class="material-icons right">send</i>Send
-              </button>
-            </form>
-          </div>
+              <i class="material-icons right">send</i>Send
+            </button>
+          </form>
         </div>
-      </Container>
+      </div>
     );
   }
 }
