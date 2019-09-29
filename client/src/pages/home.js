@@ -145,6 +145,8 @@ class home extends Component {
         <div className="container z-depth-5">
           <MapContainer />
         </div>
+        <br />
+        <br />
       </>
     );
   }

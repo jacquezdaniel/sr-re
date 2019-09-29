@@ -16,3 +16,10 @@
   background: black;
   color: white;
 }
+
+.page-footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2px;
+}
