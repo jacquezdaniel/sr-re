@@ -109,6 +109,8 @@ class contact extends Component {
               <i class="material-icons right">send</i>Send
             </button>
           </form>
+          <br />
+          <br />
         </div>
       </div>
     );
