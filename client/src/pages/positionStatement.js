@@ -174,22 +174,35 @@ const positionStatement = () => {
             >
               Diagnostic Repairs Following a Collision
             </Card>
+          </Col>
+          <Col m={12} s={12}>
+            <Card
+              className="black center"
+              textClassName="white-text center"
+              title="Hyundai Pre-Repair and Post-Repair"
+              actions={[
+                <a href="positionstatement/Hyundai_Pre-Repair-and-Post-Repair-System-Scanning.pdf">
+                  Hyundai Pre-Repair and Post-Repair
+                </a>
+              ]}
+            >
+              Pre-Repair and Post-Repair System Scanning
+            </Card>
           </Col>{" "}
-          {/* <Col m={12} s={12}>
-          <Card
-            className="black"
-            textClassName="white-text"
-            title="Nissan Radar"
-            actions={[
-              <a href="positionstatement/Position Statement Aftermarket parts Final.pdf">
-                POSITION STATEMENT: Required Radar Recalibration Post-Repair
-              </a>
-            ]}
-          >
-            {" "}
-            Automated Driver Assist Systems
-          </Card>
-        </Col> */}
+          <Col m={12} s={12}>
+            <Card
+              className="black center"
+              textClassName="white-text center"
+              title="Mazda Scanning Position Statement"
+              actions={[
+                <a href="positionstatement/Mazda-Scanning-Position-Statement.pdf">
+                  Mazda Scanning Position Statement
+                </a>
+              ]}
+            >
+              Scanning a vehicle before and after a collision repair
+            </Card>
+          </Col>
         </Row>
       </div>
     </>
