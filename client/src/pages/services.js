@@ -16,7 +16,7 @@ const services = () => {
               </h2>
               <h5 className="center">Our Services Include</h5>
 
-              <p className=" center light">
+              <p className="center">
                 ADAS Calibrations
                 <br />
                 SRS
@@ -84,7 +84,7 @@ const services = () => {
                 <i className="material-icons">local_shipping</i>
               </h2>
               <h5 className="center">Mobile Services</h5>
-              <p className="text-center">
+              <p className="center">
                 We come to you. Call us for all your mechanical, electrical,
                 alignments and tire needs. We provide exceptional customer
                 service, pick up and delivery, or at your door service. We have
@@ -92,6 +92,7 @@ const services = () => {
                 makes or models, reset all computer codes and get you back on
                 the road fast!
               </p>
+              <br />
               <br />
             </div>
           </div>
