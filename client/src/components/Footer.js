@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="page-footer black center">
       <div className="container">
         <div className="footer-copyright black">
-          © 2019 Superior Replacement - All Rights Reserved -
+          © 2019-2020 Superior Replacement - All Rights Reserved -
         </div>
         <div className="container">
           <a

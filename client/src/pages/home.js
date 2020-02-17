@@ -19,53 +19,25 @@ class home extends Component {
         <br />
         <div className="container black no-pad-bot z-depth-5">
           <Slider>
-            <Slide
-              image={
-                <img
-                  src="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-3CCQ52x/0/781c7acf/4K/i-3CCQ52x-4K.jpg"
-                  alt=""
-                />
-              }
-            >
+            <Slide image={<img src="/images/home1.jpg" alt="" />}>
               <Caption>
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
-            <Slide
-              image={
-                <img
-                  src="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-CVBQJsS/0/f04ca74b/4K/i-CVBQJsS-4K.jpg"
-                  alt=""
-                />
-              }
-            >
+            <Slide image={<img src="/images/home2.jpg" alt="" />}>
               <Caption placement="left">
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
-            <Slide
-              image={
-                <img
-                  src="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-5n4JdMh/0/d52324bd/4K/i-5n4JdMh-4K.jpg"
-                  alt=""
-                />
-              }
-            >
+            <Slide image={<img src="/images/home3.jpg" alt="" />}>
               <Caption placement="right">
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
-            <Slide
-              image={
-                <img
-                  src="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-C6HDDxh/0/c5058666/4K/i-C6HDDxh-4K.jpg"
-                  alt=""
-                />
-              }
-            >
+            <Slide image={<img src="/images/home4.jpg" alt="" />}>
               <Caption>
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
@@ -79,9 +51,7 @@ class home extends Component {
           <div className="row">
             <Col m={4} s={12}>
               <Card
-                header={
-                  <CardTitle image="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-KxbGDnR/0/1d2842cf/4K/i-KxbGDnR-4K.jpg" />
-                }
+                header={<CardTitle image="/images/home6.jpg" />}
                 actions={[<a />]}
               >
                 Serving the Inland Empire, Los Angeles, San Bernardino and
@@ -91,9 +61,7 @@ class home extends Component {
             </Col>
             <Col m={4} s={12}>
               <Card
-                header={
-                  <CardTitle image="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-sTv4rmd/0/717d8252/4K/i-sTv4rmd-4K.jpg" />
-                }
+                header={<CardTitle image="/images/home5.jpg" />}
                 actions={[<a />]}
               >
                 At Superior Replacement we aim to provide guaranteed customer
@@ -104,9 +72,7 @@ class home extends Component {
             </Col>
             <Col m={4} s={12}>
               <Card
-                header={
-                  <CardTitle image="https://photos.smugmug.com/2019/Work/Events/Superior-Replacement-Opening/n-CmLxvs/i-95nPwdn/0/7a84a89d/XL/i-95nPwdn-XL.jpg" />
-                }
+                header={<CardTitle image="/images/home7.jpg" />}
                 actions={[<a />]}
               >
                 We offer a wide range of services in our shop as well as mobile
