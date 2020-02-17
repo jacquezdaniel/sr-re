@@ -92,7 +92,4 @@ class Image extends React.Component {
 connect.propTypes = {
   imageUrls: PropTypes.arrayOf(PropTypes.string).isRequired
 };
-export default connect(
-  null,
-  { deleteFile, updateFile }
-)(Image);
+export default connect(null, { deleteFile, updateFile })(Image);

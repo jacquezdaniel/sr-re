@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { connect } from "react-redux";
 import { getFiles } from "../actions";
-import Image from "./Image";
 import "./styles/Image.css";
+import { Preloader } from "react-materialize";
+const Image = lazy(() => import("./Image"));
 
 class ImageContainer extends React.Component {
   componentDidMount() {
@@ -12,11 +13,25 @@ class ImageContainer extends React.Component {
   // Maps files to be displayed in the #image-container
   renderImages = () => {
     if (!this.props.files || this.props.files.length === 0) {
-      return <p>No images to display</p>;
+      return (
+        <p class="center">
+          <Preloader />
+        </p>
+      );
     }
 
     return this.props.files.map((file, i) => {
-      return <Image file={file} key={i} />;
+      return (
+        <Suspense
+          fallback={
+            <p class="center">
+              <Preloader active color="blue" flashing />
+            </p>
+          }
+        >
+          <Image file={file} key={i} />;
+        </Suspense>
+      );
     });
   };
 
@@ -31,9 +46,6 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  {
-    getFiles
-  }
-)(ImageContainer);
+export default connect(mapStateToProps, {
+  getFiles
+})(ImageContainer);
