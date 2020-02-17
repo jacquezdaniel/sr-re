@@ -71,7 +71,7 @@ class Image extends React.Component {
   };
 
   render() {
-    const style = this.state.didLoad ? {} : { visibility: "hidden" };
+    const style = this.state.didLoad ? {} : { filter: `blur(20px)` };
 
     return (
       <>
