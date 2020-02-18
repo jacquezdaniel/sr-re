@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === "production") {
 // Connect to MongoDB
 mongoose
   .connect(keys.MONGO_URI, {
+    useUnifiedTopology: true,
     useNewUrlParser: true
   })
   .then(() => console.log("MongoDB Atlas Connected"))

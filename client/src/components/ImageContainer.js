@@ -25,11 +25,11 @@ class ImageContainer extends React.Component {
         <Suspense
           fallback={
             <p class="center">
-              <Preloader active color="blue" flashing />
+              <Preloader flashing />
             </p>
           }
         >
-          <Image file={file} key={i} />;
+          <Image file={file} key={i} />
         </Suspense>
       );
     });
