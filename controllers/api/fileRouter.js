@@ -1,35 +1,22 @@
 const express = require("express");
 const router = express.Router();
-const upload = require("../../services/galleryMulter");
-const pdfss = require("../../services/postionMulter");
-const Grid = require("gridfs-stream");
-const Grid1 = require("gridfs-stream");
 const mongoose = require("mongoose");
 
 // Reference Mongo connection
 const conn = mongoose.connection;
-const conn1 = mongoose.connection;
 
-// Initialize gfs
+// init gfs
 let gfs;
-
-// Initialize gfs stream
 conn.once("open", () => {
-  gfs = Grid(conn.db, mongoose.mongo);
-  gfs.collection("uploads");
+  // init stream
+  gfs = new mongoose.mongo.GridFSBucket(conn.db, {
+    bucketName: "uploads"
+  });
 });
 
-let pdfs;
-
-conn1.once("open", () => {
-  pdfs = Grid1(conn.db, mongoose.mongo);
-  pdfs.collection("pdf");
-});
-
-// @route GET /files
-// @desc Gets all files in json format
+// Gets all files in json format
 router.get("/", (req, res) => {
-  gfs.files
+  gfs
     .find()
     .sort({ _id: -1 })
     .toArray((err, files) => {
@@ -37,18 +24,39 @@ router.get("/", (req, res) => {
     });
 });
 
+// Check if file is an image
 router.get("/", (req, res) => {
-  pdfs.files
-    .find()
-    .sort({ _id: -1 })
-    .toArray((err, files) => {
-      return res.json(files);
-    });
+  if (!gfs) {
+    console.log("some error occured, check connection to db");
+    res.send("some error occured, check connection to db");
+    process.exit(0);
+  }
+  gfs.find().toArray((err, files) => {
+    // check if files
+    if (!files || files.length === 0) {
+      return res.json({
+        files: false
+      });
+    } else {
+      files.map(file => {
+        if (
+          file.contentType === "image/png" ||
+          file.contentType === "image/jpeg"
+        ) {
+          file.isImage = true;
+        } else {
+          file.isImage = false;
+        }
+        return file;
+      });
+    }
+    return res.json(files);
+  });
 });
-// @route GET /files/:filename
-// @desc Displays a specific files in json format
+
+// Displays a specific files in json format
 router.get("/:filename", (req, res) => {
-  gfs.files.findOne({ filename: req.params.filename }, (err, file) => {
+  gfs.find({ filename: req.params.filename }, (err, file) => {
     if (!file || file.length === 0) {
       return res.status(404).json({
         err: "That file doesn't exist"
@@ -58,144 +66,20 @@ router.get("/:filename", (req, res) => {
   });
 });
 
-// @route POST /files/upload
-// @desc Uploads a file to the DB
-router.post("/upload", upload.single("file"), (req, res) => {
-  gfs.files.updateOne(
-    { _id: req.file.id },
-    {
-      $set: { metadata: { caption: req.file.filename, alt: req.file.filename } }
-    },
-    (err, file) => {
-      gfs.files.findOne({ filename: req.file.filename }, (err, file) => {
-        return res.json(file);
-      });
-    }
-  );
-});
-
-router.post("/pdf", pdfss.single("file"), (req, res) => {
-  pdfs.files.updateOne(
-    { _id: req.file.id },
-    {
-      $set: {
-        metadata: { title: req.file.filename, content: req.file.filename }
-      }
-    },
-    (err, file) => {
-      pdfs.files.findOne({ filename: req.file.filename }, (err, file) => {
-        return res.json(file);
-      });
-    }
-  );
-});
-
-// @route PUT /files/update/:fileName
-// @desc Updates the metadata of the file
-router.patch("/update/:filename", (req, res) => {
-  gfs.files.update(
-    { filename: req.params.filename },
-    { $set: { metadata: { caption: req.body.caption, alt: req.body.alt } } },
-    (err, file) => {
-      if (err) {
-        return res.status(404).json({
-          err: `${req.params.filename} was not updated`
-        });
-      }
-      gfs.files.findOne({ filename: req.params.filename }, (err, file) => {
-        return res.json(file);
-      });
-    }
-  );
-});
-
-router.patch("/update/:filename", (req, res) => {
-  pdfs.files.update(
-    { filename: req.params.filename },
-    {
-      $set: { metadata: { title: req.body.title, content: req.body.content } }
-    },
-    (err, file) => {
-      if (err) {
-        return res.status(404).json({
-          err: `${req.params.filename} was not updated`
-        });
-      }
-      pdfs.files.findOne({ filename: req.params.filename }, (err, file) => {
-        return res.json(file);
-      });
-    }
-  );
-});
-
-// @route DELETE /files/delete/:fileName
-// @desc Deletes a specific file by filename
-router.delete("/delete/:filename", (req, res) => {
-  gfs.remove({ filename: req.params.filename, root: "uploads" }, err => {
-    if (err) {
-      return res.status(404).json({
-        err: `${req.params.filename} was not deleted`
-      });
-    }
-    res.json(req.params.filename);
-  });
-});
-
-router.delete("/delete/:filename", (req, res) => {
-  pdfs.remove({ filename: req.params.filename, root: "pdf" }, err => {
-    if (err) {
-      return res.status(404).json({
-        err: `${req.params.filename} was not deleted`
-      });
-    }
-    res.json(req.params.filename);
-  });
-});
-
-// @route GET files/read/:filename
-// @desc Displays a specific file
+// Displays files to screen
 router.get("/read/:filename", (req, res) => {
-  gfs.files.findOne({ filename: req.params.filename }, (err, file) => {
-    if (!file || file.length === 0) {
-      return res.status(404).json({
-        err: `${req.params.filename} was not found`
-      });
-    }
-    // Check if file is an image
-    if (
-      file.contentType === "image/jpeg" ||
-      file.contentType === "image/png" ||
-      file.contentType === "image/gif"
-    ) {
-      // If so, ead Grid FS output to browser
-      const readstream = gfs.createReadStream(file.filename);
-      readstream.pipe(res);
-    } else {
-      res.status(404).json({
-        err: `${req.params.filename} is not an image`
-      });
-    }
-  });
-});
-
-router.get("/pdf/:filename", (req, res) => {
-  pdfs.files.findOne({ filename: req.params.filename }, (err, file) => {
-    if (!file || file.length === 0) {
-      return res.status(404).json({
-        err: `${req.params.filename} was not found`
-      });
-    }
-    // Check if file is an image
-    if (file.contentType === "application/pdf") {
-      // If so, ead Grid FS output to browser
-      const readstream = pdfs.createReadStream(file.filename);
-      readstream.pipe(res);
-    } else {
-      res.status(404).json({
-        err: `${req.params.filename} is not a pdf`
-      });
-    }
-  });
+  gfs
+    .find({
+      filename: req.params.filename
+    })
+    .toArray((err, files) => {
+      if (!files || files.length === 0) {
+        return res.status(404).json({
+          err: "no files exist"
+        });
+      }
+      gfs.openDownloadStreamByName(req.params.filename).pipe(res);
+    });
 });
 
 module.exports = router;
