@@ -9,12 +9,17 @@ import {
   CardTitle,
   Col
 } from "react-materialize";
+import ScrollToTop from "react-scroll-up";
 import "./home.css";
 
 class home extends Component {
   render() {
     return (
       <>
+        <ScrollToTop showUnder={160}>
+          <i class="material-icons prefix md-36 orange600">arrow_upward</i>
+          <span for="icon_prefix"></span>
+        </ScrollToTop>
         <br />
         <br />
         <div className="container black no-pad-bot z-depth-5">

@@ -48,3 +48,10 @@ nav {
 .slider .indicators .indicator-item.active {
   background-color: #0d47a1;
 }
+
+.material-icons.orange600 {
+  color: #fb8c00;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}

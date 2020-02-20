@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import M from "materialize-css";
+import ScrollToTop from "react-scroll-up";
 import "./contact.css";
 
 class contact extends Component {
@@ -46,6 +47,10 @@ class contact extends Component {
   render() {
     return (
       <div className="container">
+        <ScrollToTop showUnder={160}>
+          <i class="material-icons prefix md-36 orange600">arrow_upward</i>
+          <span for="icon_prefix"></span>
+        </ScrollToTop>
         {/* <h5>Contact Us</h5> */}
         <br />
         <br />

@@ -1,10 +1,15 @@
 import React from "react";
 import { Row } from "react-materialize";
+import ScrollToTop from "react-scroll-up";
 import "./services.css";
 
 const services = () => {
   return (
     <>
+      <ScrollToTop showUnder={160}>
+        <i class="material-icons prefix md-36 orange600">arrow_upward</i>
+        <span for="icon_prefix"></span>
+      </ScrollToTop>
       <br />
       <br />
       <div className="container z-depth-4">
