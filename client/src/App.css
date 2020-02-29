@@ -9,10 +9,6 @@ body {
   flex: 1 0 auto;
 }
 
-.container {
-  flex: 1 0 auto;
-}
-
 .content-wrapper-100vh {
   min-height: 100vh;
 }
