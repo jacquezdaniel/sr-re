@@ -22,7 +22,7 @@ class home extends Component {
         </ScrollToTop>
         <br />
         <br />
-        <div className="container black no-pad-bot z-depth-5">
+        <div className="container no-pad-bot z-depth-5">
           <Slider>
             <Slide image={<img src="/images/home1.jpg" alt="" />}>
               <Caption>
@@ -79,26 +79,56 @@ class home extends Component {
         </div>
         <br />
         <div className="container">
-          <div class="row">
-            <div class="col s6 offset-s3">
-              <div className="card">
-                <div className="card-content">
-                  <p className="center">
-                    Give us a call at
-                    <br />
-                    1-909-518-7269
-                    <br />
-                    <a className="fa fa-phone" href="tel:1-909-518-7269"></a>
-                    <br />
-                    Located at 2684 Market Street, Riverside, CA 92501
-                    <br />
-                    <br />
-                    <a href="https://www.google.com/maps?saddr&daddr=2684+Market+Street,+Riverside,+CA+92501">
-                      Click for directions
-                    </a>
-                  </p>
-                </div>
-              </div>
+          <div className="card z-depth-5 indigo darken-2">
+            <div className="card-content white-text">
+              <p className="center">
+                Give us a call at
+                <br />
+                1-909-518-7269
+                <br />
+                <br />
+                <a className="material-icons" href="tel:1-909-518-7269">
+                  <i class="material-icons md-48">local_phone</i>
+                </a>
+                <br />
+                Located at 2684 Market Street, Riverside, CA 92501
+                <br />
+                <br />
+                <a
+                  className="black-text icon-block"
+                  href="https://www.google.com/maps?saddr&daddr=2684+Market+Street,+Riverside,+CA+92501"
+                >
+                  <i className="material-icons md-48">navigation</i>
+                </a>
+                <br />
+                <br />
+                Download Our App
+                <br />
+                <br />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
+                  target="_parent"
+                >
+                  <img
+                    src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
+                    width="161"
+                    height="auto"
+                    border="0"
+                  ></img>
+                </a>
+                <a
+                  href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
+                  target="_parent"
+                >
+                  <img
+                    class="news-app-promo__app-store"
+                    src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
+                    width="161"
+                    height="auto"
+                    border="0"
+                  ></img>
+                </a>
+              </p>
             </div>
           </div>
         </div>

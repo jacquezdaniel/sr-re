@@ -13,3 +13,8 @@ a.fa.fa-phone {
     height: 200px;
   }
 }
+
+.material-icons.md-48 {
+  font-size: 48px;
+  color: black;
+}
