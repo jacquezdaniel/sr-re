@@ -16,5 +16,10 @@ a.fa.fa-phone {
 
 .material-icons.md-48 {
   font-size: 48px;
-  color: black;
+  color: white;
+}
+
+#app-download {
+  width: 100%;
+  max-width: 700px;
 }
