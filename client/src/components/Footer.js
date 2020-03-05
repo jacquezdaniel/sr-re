@@ -4,12 +4,8 @@ import "./styles/Footer.css";
 export default function Footer() {
   return (
     <div className="page-footer black">
-      <div className="container">
-        <div className="footer-copyright">
-          <p>© 2020 Superior Replacement</p>
-        </div>
-      </div>
       <div className="container center">
+        <br />
         <a
           href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
           target="_parent"
@@ -50,6 +46,9 @@ export default function Footer() {
           <p className="fa fa-phone"></p>
           Call Us
         </a>
+      </div>
+      <div className="container">
+        <div className="footer-copyright">© Superior Replacement 2019-2020</div>
       </div>
     </div>
   );
