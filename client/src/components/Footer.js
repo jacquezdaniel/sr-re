@@ -48,7 +48,7 @@ export default function Footer() {
         </a>
       </div>
       <div className="container">
-        <div className="footer-copyright">© Superior Replacement 2019-2020</div>
+        <div className="footer-copyright">© 2020 Superior Replacement</div>
       </div>
     </div>
   );
