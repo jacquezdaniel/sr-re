@@ -4,11 +4,10 @@
   }
 }
 
-a.fa.fa-phone {
-  color: black;
-}
-
 @media only screen and (max-width: 600px) {
+  #parallax {
+    min-width: 100%;
+  }
   .parallax-container {
     height: 200px;
   }
@@ -21,5 +20,13 @@ a.fa.fa-phone {
 
 #app-download {
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
+}
+
+#parallax {
+  max-width: 100%;
+}
+
+#map {
+  max-width: 950px;
 }

@@ -22,7 +22,7 @@ class home extends Component {
         </ScrollToTop>
         <br />
         <br />
-        <div className="container no-pad-bot z-depth-5">
+        <div className="container no-pad-bot">
           <Slider>
             <Slide image={<img src="/images/home1.jpg" alt="" />}>
               <Caption>
@@ -51,18 +51,23 @@ class home extends Component {
           </Slider>
         </div>
         <br />
-        <br />
-        <div className="section z-depth-5">
+        <div className="section">
           <div className="row">
             <Col m={4} s={12}>
-              <Card header={<CardTitle image="/images/home6.jpg" />}>
+              <Card
+                className="z-depth-5"
+                header={<CardTitle image="/images/home6.jpg" />}
+              >
                 Serving the Inland Empire, Los Angeles, San Bernardino and
                 Orange Counties. For ADAS calibrations mechanical pigtail and
                 wire repair A/C service.
               </Card>
             </Col>
             <Col m={4} s={12}>
-              <Card header={<CardTitle image="/images/home5.jpg" />}>
+              <Card
+                className="z-depth-5"
+                header={<CardTitle image="/images/home5.jpg" />}
+              >
                 At Superior Replacement we aim to provide guaranteed customer
                 satisfaction. Our motive is to provide a high level quality of
                 service. You can trust us to make fast turnarounds so you can be
@@ -70,84 +75,88 @@ class home extends Component {
               </Card>
             </Col>
             <Col m={4} s={12}>
-              <Card header={<CardTitle image="/images/home7.jpg" />}>
+              <Card
+                className="z-depth-5"
+                header={<CardTitle image="/images/home7.jpg" />}
+              >
                 We offer a wide range of services in our shop as well as mobile
                 services.
               </Card>
             </Col>
           </div>
-        </div>
-        <br />
-        <div className="section">
-          <Parallax />
-        </div>
-        <div className="container">
-          <div id="app-download" className="container">
-            <div className="card z-depth-5 indigo darken-2">
-              <div className="row">
-                <div className="card-content white-text">
-                  <p className="col s6 center">
-                    Give us a call at 1-909-518-7269
-                    <br />
-                    <br />
-                    <a className="material-icons" href="tel:1-909-518-7269">
-                      <i class="material-icons md-48">local_phone</i>
-                    </a>
-                    <br />
-                    <br />
-                  </p>
-                  <p className="col s6 center">
-                    2684 Market Street, Riverside, CA 92501
-                    <br />
-                    <br />
-                    <a
-                      className="black-text icon-block"
-                      href="https://www.google.com/maps?saddr&daddr=2684+Market+Street,+Riverside,+CA+92501"
-                    >
-                      <i className="material-icons md-48">navigation</i>
-                    </a>
-                  </p>
-                </div>
+          <br />
+          <div className="container">
+            <div id="app-download" className="container">
+              <div className="card z-depth-5 indigo darken-4">
                 <div className="row">
                   <div className="card-content white-text">
-                    <p className="col s12 center">
-                      Download Our App
+                    <p className="col s6 center">
+                      Give us a call at 1-909-518-7269
                       <br />
                       <br />
-                      <a
-                        href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
-                        target="_parent"
-                      >
-                        <img
-                          src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
-                          width="161"
-                          height="auto"
-                          border="0"
-                        ></img>
+                      <a className="material-icons" href="tel:1-909-518-7269">
+                        <i class="material-icons md-48">local_phone</i>
                       </a>
                       <br />
+                      <br />
+                    </p>
+                    <p className="col s6 center">
+                      2684 Market Street, Riverside, CA 92501
+                      <br />
+                      <br />
                       <a
-                        href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
-                        target="_parent"
+                        className="black-text icon-block"
+                        href="https://www.google.com/maps?saddr&daddr=2684+Market+Street,+Riverside,+CA+92501"
                       >
-                        <img
-                          class="news-app-promo__app-store"
-                          src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
-                          width="161"
-                          height="auto"
-                          border="0"
-                        ></img>
+                        <i className="material-icons md-48">navigation</i>
                       </a>
                     </p>
+                  </div>
+                  <div className="row">
+                    <div className="card-content white-text">
+                      <p className="col s12 center">
+                        Download Our App
+                        <br />
+                        <br />
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
+                          target="_parent"
+                        >
+                          <img
+                            src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
+                            width="161"
+                            height="auto"
+                            border="0"
+                          ></img>
+                        </a>
+                        <br />
+                        <a
+                          href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
+                          target="_parent"
+                        >
+                          <img
+                            class="news-app-promo__app-store"
+                            src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
+                            width="161"
+                            height="auto"
+                            border="0"
+                          ></img>
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="section">
+          <div id="parallax" className="container z-depth-5">
+            <Parallax />
+          </div>
+        </div>
         <br />
-        <br />
-        <div className="container z-depth-5">
+        <div id="map" className="container z-depth-5">
           <MapContainer />
         </div>
         <br />

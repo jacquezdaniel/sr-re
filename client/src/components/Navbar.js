@@ -9,7 +9,7 @@ function Navbar() {
           <div className="nav-wrapper">
             <div className="container">
               <Link to="/" class="brand-logo">
-                <img src="images/logo.jpg" width="150" height="64" alt="" />
+                <img src="images/logo.jpg" width="150" height="55" alt="" />
               </Link>
               <a
                 href="/"

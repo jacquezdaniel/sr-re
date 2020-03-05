@@ -16,6 +16,37 @@ body {
 .button {
   padding-right: 10px;
 }
+nav {
+  height: 55px;
+  line-height: 55px;
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+  height: 55px;
+  line-height: 55px;
+}
+
+nav .button-collapse i {
+  height: 55px;
+  line-height: 55px;
+}
+
+nav .brand-logo {
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 601px) {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    height: 55px;
+    line-height: 55px;
+  }
+}
 
 nav .material-icons {
   margin: 0 0.5rem 0 0;

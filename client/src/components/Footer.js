@@ -3,13 +3,12 @@ import "./styles/Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="page-footer black center">
+    <div className="page-footer black">
       <div className="container">
-        <p className="footer-copyright black">
+        <p className="footer-copyright">
           © 2019-2020 Superior Replacement - All Rights Reserved -
         </p>
-        <br />
-        <div className="container">
+        <div className="container center">
           <a
             href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
             target="_parent"
@@ -35,7 +34,7 @@ export default function Footer() {
             ></img>
           </a>
         </div>
-        <div className="container">
+        <div className="container center">
           <a
             className="grey-text text-lighten-4 left-align"
             href="https://www.facebook.com/superiorreplacement/"
@@ -52,6 +51,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
