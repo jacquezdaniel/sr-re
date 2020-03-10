@@ -91,7 +91,9 @@ class home extends Component {
                 <div className="row">
                   <div className="card-content white-text">
                     <p className="col s6 center">
-                      Give us a call at 1-909-518-7269
+                      Call Us At
+                      <br />
+                      1-909-518-7269
                       <br />
                       <br />
                       <a className="material-icons" href="tel:1-909-518-7269">
@@ -101,7 +103,9 @@ class home extends Component {
                       <br />
                     </p>
                     <p className="col s6 center">
-                      2684 Market Street, Riverside, CA 92501
+                      2684 Market Street
+                      <br />
+                      Riverside, CA 92501
                       <br />
                       <br />
                       <a
