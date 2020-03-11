@@ -20,9 +20,7 @@ class home extends Component {
           <i class="material-icons prefix md-36 orange600">arrow_upward</i>
           <span for="icon_prefix"></span>
         </ScrollToTop>
-        <br />
-        <br />
-        <div className="container no-pad-bot">
+        <div id="slider" className="container no-pad-bot">
           <Slider>
             <Slide image={<img src="/images/home1.jpg" alt="" />}>
               <Caption>
@@ -59,8 +57,8 @@ class home extends Component {
                 header={<CardTitle image="/images/home6.jpg" />}
               >
                 Serving the Inland Empire, Los Angeles, San Bernardino and
-                Orange Counties. For ADAS calibrations mechanical pigtail and
-                wire repair A/C service.
+                Orange Counties. For ADAS calibrations, mechanical pigtail, wire
+                repair, and A/C service.
               </Card>
             </Col>
             <Col m={4} s={12}>

@@ -27,6 +27,10 @@
   max-width: 100%;
 }
 
+#slider {
+  padding-top: 2rem;
+}
+
 #map {
   max-width: 950px;
 }
