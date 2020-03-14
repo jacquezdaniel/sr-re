@@ -36,7 +36,7 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      <ul className="sidenav" id="mobile-menu">
+      <ul className="sidenav sidenav-close" id="mobile-menu">
         <li>
           <Link to="services">Services</Link>
         </li>
