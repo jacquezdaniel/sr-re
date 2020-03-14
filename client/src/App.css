@@ -9,6 +9,15 @@ body {
   flex: 1 0 auto;
 }
 
+#notfound {
+  padding-top: 10rem;
+  min-height: 75vh;
+}
+
+#image-container {
+  min-height: 95vh;
+}
+
 .content-wrapper-100vh {
   min-height: 100vh;
 }

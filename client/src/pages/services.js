@@ -524,7 +524,7 @@ const services = () => {
               <br />
               <p className="center">
                 <img
-                  className=" circle responsive-img"
+                  className="circle responsive-img"
                   src="/images/mobileservice.jpg"
                   alt="mobile services"
                 ></img>
