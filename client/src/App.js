@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 
 import "../node_modules/materialize-css/dist/css/materialize.min.css";
 import "../node_modules/materialize-css/dist/js/materialize.min.js";
@@ -22,6 +22,7 @@ function App() {
       <Route exact path="/positionstatements" component={positionStatement} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/gallery" component={Gallery} />
+      <Redirect to="/" />
       <Footer />
     </Router>
   );
