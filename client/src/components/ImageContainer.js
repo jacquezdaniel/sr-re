@@ -15,7 +15,7 @@ class ImageContainer extends React.Component {
     if (!this.props.files || this.props.files.length === 0) {
       return (
         <p class="center">
-          <Preloader />
+          <Preloader flashing />
         </p>
       );
     }
