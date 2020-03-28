@@ -534,6 +534,7 @@ const services = () => {
         </div>
         <br />
         <br />
+        <div className="divider"></div>
         <div className="container">
           <div className="row">
             <div className="col s12 m6 offset-m3">

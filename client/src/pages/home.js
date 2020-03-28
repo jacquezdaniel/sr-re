@@ -82,7 +82,6 @@ class home extends Component {
               </Card>
             </Col>
           </div>
-          <br />
           <div className="container">
             <div id="app-download" className="container">
               <div className="card z-depth-5 indigo darken-4">
