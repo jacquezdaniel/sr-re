@@ -15,6 +15,7 @@ export default function Footer() {
             width="161"
             height="auto"
             border="0"
+            alt="google"
           ></img>
         </a>
         <br />
@@ -28,6 +29,7 @@ export default function Footer() {
             width="161"
             height="auto"
             border="0"
+            alt="apple"
           ></img>
         </a>
       </div>
