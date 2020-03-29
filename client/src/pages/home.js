@@ -10,6 +10,7 @@ import {
   Col
 } from "react-materialize";
 import ScrollToTop from "react-scroll-up";
+import { ReactTinyLink } from "react-tiny-link";
 import "./home.css";
 
 class home extends Component {
@@ -83,8 +84,36 @@ class home extends Component {
             </Col>
           </div>
           <div className="container">
+            <h4 className="center">Articles & News</h4>
+            <div className="divider"></div>
+            <br />
+            <div className="row">
+              <Col m={6} s={12}>
+                <ReactTinyLink
+                  cardSize="small"
+                  showGraphic={true}
+                  maxLine={2}
+                  minLine={1}
+                  url="https://www.ratchetandwrench.com/articles/8910-the-age-of-adas?page=1"
+                />
+              </Col>
+              <Col m={6} s={12}>
+                <ReactTinyLink
+                  cardSize="small"
+                  showGraphic={true}
+                  maxLine={2}
+                  minLine={1}
+                  url="https://www.ratchetandwrench.com/articles/8311-shop-relocates-to-perform-adas-calibrations"
+                />
+              </Col>
+            </div>
+          </div>
+          <br />
+          <div className="container">
             <div id="app-download" className="container">
               <div className="card z-depth-5 indigo darken-4">
+                <br />
+                <h5 className="center white-text">Phone Number & Directions</h5>
                 <div className="row">
                   <div className="card-content white-text">
                     <p className="col s6 center">
@@ -113,12 +142,17 @@ class home extends Component {
                       </a>
                     </p>
                   </div>
-                  <div className="row">
-                    <div className="card-content white-text">
-                      <p className="col s12 center">
-                        Download Our App
-                        <br />
-                        <br />
+                </div>
+                <div className="container">
+                  <div className="divider"></div>
+                  <div className="card-content white-text">
+                    <div className="row">
+                      <h5 className="col s12 center">
+                        Download Our Mobile App
+                      </h5>
+                      <br />
+                      <br />
+                      <p className="center">
                         <a
                           href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
                           target="_parent"
