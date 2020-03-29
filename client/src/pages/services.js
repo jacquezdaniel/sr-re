@@ -36,18 +36,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       ADAS Calibration
                     </Button>
                   }
@@ -101,18 +101,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Supplemental Restraint System (SRS)
                     </Button>
                   }
@@ -149,18 +149,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Steering Angle Sensor
                     </Button>
                   }
@@ -198,18 +198,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       OEM Programming And Calibrations Module Programming
                     </Button>
                   }
@@ -250,18 +250,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Nissan/Infiniti ICC System
                     </Button>
                   }
@@ -296,18 +296,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Windshield Camera
                     </Button>
                   }
@@ -340,18 +340,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Adaptive Headlights
                     </Button>
                   }
@@ -389,18 +389,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Blind Spot Monitor
                     </Button>
                   }
@@ -434,18 +434,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Pre-Collision System
                     </Button>
                   }
@@ -480,18 +480,18 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 250,
+                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 250,
+                    outDuration: 400,
                     preventScrolling: true,
                     startingTop: "4%"
                   }}
                   trigger={
-                    <Button className="indigo" node="button">
+                    <Button className="indigo" node="button" waves="orange">
                       Adaptive Cruise Control
                     </Button>
                   }
