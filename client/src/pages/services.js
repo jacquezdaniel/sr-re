@@ -174,7 +174,7 @@ const services = () => {
                     steering position sensor for redundancy and to confirm data.
                     The ESC module must receive two signals to confirm the
                     steering wheel position. These signals are often out of
-                    phase with each other
+                    phase with each other.
                   </p>
                 </Modal>
               </p>
@@ -521,19 +521,16 @@ const services = () => {
                 model cars, any makes or models, reset all computer codes and
                 get you back on the road fast!
               </p>
-              <br />
               <p className="center">
                 <img
                   className="circle responsive-img"
-                  src="/images/mobileservice.jpg"
+                  src="images/mobileservice.jpg"
                   alt="mobile services"
                 ></img>
               </p>
             </div>
           </div>
         </div>
-        <br />
-        <br />
         <div className="divider"></div>
         <div className="container">
           <div className="row">

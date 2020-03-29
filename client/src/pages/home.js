@@ -22,25 +22,25 @@ class home extends Component {
         </ScrollToTop>
         <div id="slider" className="container no-pad-bot">
           <Slider>
-            <Slide image={<img src="/images/home1.jpg" alt="" />}>
+            <Slide image={<img src="images/home1.jpg" alt="home" />}>
               <Caption>
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
-            <Slide image={<img src="/images/home2.jpg" alt="" />}>
+            <Slide image={<img src="images/home2.jpg" alt="home" />}>
               <Caption placement="left">
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
-            <Slide image={<img src="/images/home3.jpg" alt="" />}>
+            <Slide image={<img src="images/home3.jpg" alt="home" />}>
               <Caption placement="right">
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
               </Caption>
             </Slide>
-            <Slide image={<img src="/images/home4.jpg" alt="" />}>
+            <Slide image={<img src="images/home4.jpg" alt="home" />}>
               <Caption>
                 {/* <h3>Superior Replacement</h3> */}
                 <p className="light grey-text text-lighten-3"></p>
@@ -54,7 +54,7 @@ class home extends Component {
             <Col m={4} s={12}>
               <Card
                 className="z-depth-5"
-                header={<CardTitle image="/images/home6.jpg" />}
+                header={<CardTitle image="images/home6.jpg" />}
               >
                 Serving the Inland Empire, Los Angeles, San Bernardino and
                 Orange Counties. For ADAS calibrations, mechanical pigtail, wire
@@ -64,7 +64,7 @@ class home extends Component {
             <Col m={4} s={12}>
               <Card
                 className="z-depth-5"
-                header={<CardTitle image="/images/home5.jpg" />}
+                header={<CardTitle image="images/home7.jpg" />}
               >
                 At Superior Replacement we aim to provide guaranteed customer
                 satisfaction. Our motive is to provide a high level quality of
@@ -75,7 +75,7 @@ class home extends Component {
             <Col m={4} s={12}>
               <Card
                 className="z-depth-5"
-                header={<CardTitle image="/images/home7.jpg" />}
+                header={<CardTitle image="images/home5.jpg" />}
               >
                 We offer a wide range of services in our shop as well as mobile
                 services.
@@ -128,6 +128,7 @@ class home extends Component {
                             width="161"
                             height="auto"
                             border="0"
+                            alt="google"
                           ></img>
                         </a>
                         <br />
@@ -141,6 +142,7 @@ class home extends Component {
                             width="161"
                             height="auto"
                             border="0"
+                            alt="apple"
                           ></img>
                         </a>
                       </p>
