@@ -143,38 +143,38 @@ class home extends Component {
                     </p>
                   </div>
                 </div>
-                <div className="container">
-                  <div className="divider"></div>
-                  <br />
-                  <div className="white-text">
-                    <h5 className="center">Download Our App</h5>
+                <div className="divider"></div>
+                <div className="white-text">
+                  <div className="row">
+                    <h5 className="col s12 center">Download The App</h5>
                     <p className="center">
                       <a
-                        id="apple"
                         href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
+                        target="_parent"
                       >
                         <img
                           src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
-                          width="161"
+                          width="150"
                           height="auto"
                           border="0"
                           alt="apple"
                         ></img>
                       </a>
+                      <br />
+                      <br />
                       <a
-                        id="google"
                         href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
+                        target="_parent"
                       >
                         <img
                           src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
-                          width="161"
+                          width="150"
                           height="auto"
                           border="0"
                           alt="google"
                         ></img>
                       </a>
                     </p>
-                    <br />
                   </div>
                 </div>
               </div>
