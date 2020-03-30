@@ -38,10 +38,11 @@ export default function Footer() {
             id="facebook"
             className="grey-text text-lighten-4"
             href="https://www.facebook.com/superiorreplacement/"
+            target="_parent"
           >
             <p className="fa fa-facebook"></p>
           </a>
-          Our Facebook Page
+          Facebook Page
           <a
             id="phone"
             className="grey-text text-lighten-4"
