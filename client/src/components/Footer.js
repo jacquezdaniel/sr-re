@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <div className="page-footer black">
       <div className="container center">
-        <br />
         <p className="center">
           <a
             id="apple"
