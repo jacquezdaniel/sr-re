@@ -145,42 +145,36 @@ class home extends Component {
                 </div>
                 <div className="container">
                   <div className="divider"></div>
-                  <div className="card-content white-text">
-                    <div className="row">
-                      <h5 className="col s12 center">
-                        Download Our Mobile App
-                      </h5>
-                      <br />
-                      <br />
-                      <p className="center">
-                        <a
-                          href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
-                          target="_parent"
-                        >
-                          <img
-                            src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
-                            width="161"
-                            height="auto"
-                            border="0"
-                            alt="google"
-                          ></img>
-                        </a>
-                        <br />
-                        <a
-                          href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
-                          target="_parent"
-                        >
-                          <img
-                            class="news-app-promo__app-store"
-                            src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
-                            width="161"
-                            height="auto"
-                            border="0"
-                            alt="apple"
-                          ></img>
-                        </a>
-                      </p>
-                    </div>
+                  <br />
+                  <div className="white-text">
+                    <h5 className="center">Download Our App</h5>
+                    <p className="center">
+                      <a
+                        id="apple"
+                        href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
+                      >
+                        <img
+                          src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
+                          width="161"
+                          height="auto"
+                          border="0"
+                          alt="apple"
+                        ></img>
+                      </a>
+                      <a
+                        id="google"
+                        href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
+                      >
+                        <img
+                          src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
+                          width="161"
+                          height="auto"
+                          border="0"
+                          alt="google"
+                        ></img>
+                      </a>
+                    </p>
+                    <br />
                   </div>
                 </div>
               </div>
