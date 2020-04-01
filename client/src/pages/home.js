@@ -149,10 +149,12 @@ class home extends Component {
                     <h5 className="col s12 center">Download The App</h5>
                     <p className="center">
                       <a
+                        id="apple"
                         href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
                         target="_parent"
                       >
                         <img
+                          className="responsive-img"
                           src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
                           width="150"
                           height="auto"
@@ -160,13 +162,13 @@ class home extends Component {
                           alt="apple"
                         ></img>
                       </a>
-                      <br />
-                      <br />
                       <a
+                        id="google"
                         href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
                         target="_parent"
                       >
                         <img
+                          className="responsive-img"
                           src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
                           width="150"
                           height="auto"

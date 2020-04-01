@@ -11,6 +11,7 @@ export default function Footer() {
             href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
           >
             <img
+              className="responsive-img"
               src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg"
               width="150"
               height="auto"
@@ -23,6 +24,7 @@ export default function Footer() {
             href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
           >
             <img
+              className="responsive-img"
               src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg"
               width="150"
               height="auto"
