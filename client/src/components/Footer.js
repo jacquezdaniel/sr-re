@@ -3,7 +3,7 @@ import "./styles/Footer.css";
 
 export default function Footer() {
   return (
-    <div className="page-footer black">
+    <div className="page-footer indigo darken-4">
       <div className="container center">
         <p className="center">
           <a
@@ -56,7 +56,9 @@ export default function Footer() {
         </p>
       </div>
       <div className="container">
-        <div className="footer-copyright">© 2020 Superior Replacement</div>
+        <div className="footer-copyright indigo darken-4">
+          © 2020 Superior Replacement
+        </div>
       </div>
     </div>
   );

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <div class="navbar black">
+      <div class="navbar-fixed">
         <nav>
-          <div className="nav-wrapper">
+          <div className="nav-wrapper white">
             <div className="container">
               <Link to="/" class="brand-logo">
                 <img src="images/logo.png" width="150" height="55" alt="" />

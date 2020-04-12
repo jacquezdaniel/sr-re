@@ -14,8 +14,7 @@ const positionStatement = () => {
         <Row>
           <Col m={12} s={12}>
             <Card
-              className="black center"
-              textClassName="white-text"
+              className="white center"
               title="American Honda Position Statement"
               actions={[
                 <a href="positionstatement/Honda-Acura_Pos_Vehicle-Scans(7-16).pdf">
@@ -28,8 +27,7 @@ const positionStatement = () => {
           </Col>
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="Honda ADAS Systems"
               actions={[
                 <a href="positionstatement/HONDAADASPresentation.pdf">
@@ -42,8 +40,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="INFINITI USA"
               actions={[
                 <a href="positionstatement/INFINITI_Pos_Pre-Post-Scan_Revised(10-3-16).pdf">
@@ -56,8 +53,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={12} s={12}>
             <Card
-              className="black center"
-              textClassName="white-text"
+              className="white center"
               title="Nissan Radar Calibration Statement"
               actions={[
                 <a href="positionstatement/NISSAN RADAR CALIBRATION STATEMENT.pdf">
@@ -70,8 +66,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="Nissan Radar Post Repair"
               actions={[
                 <a href="positionstatement/Nissan Required Radar Recalibration Post-Repair.pdf">
@@ -84,8 +79,7 @@ const positionStatement = () => {
           </Col>
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="Nissan Pre and Post Scanning"
               actions={[
                 <a href="positionstatement/Nissan_Pos_Pre-and-Post-Scanning_2016_FINAL.pdf">
@@ -98,8 +92,7 @@ const positionStatement = () => {
           </Col>
           <Col m={12} s={12}>
             <Card
-              className="black center"
-              textClassName="white-text"
+              className="white center"
               title="GM Service Information"
               actions={[
                 <a href="positionstatement/pre-post-scan-collision-vehicles (1).pdf">
@@ -112,8 +105,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="Subaru of America"
               actions={[
                 <a href="positionstatement/Subaru_Pos_Pre-Post-Scanning(7-17).pdf">
@@ -126,8 +118,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="Toyota Zero Point Calibration"
               actions={[
                 <a href="positionstatement/toyota 0 point calibration.pdf">
@@ -140,8 +131,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={12} s={12}>
             <Card
-              className="black center"
-              textClassName="white-text"
+              className="white center"
               title="Toyota Scanning For Electrical System Faults"
               actions={[
                 <a href="positionstatement/toyota Scanning-for-Electrical-System-Faults.pdf">
@@ -154,8 +144,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="VW Golf"
               actions={[
                 <a href="positionstatement/VW ADAPTIVE CRUISE CONTROL.pdf">
@@ -168,8 +157,7 @@ const positionStatement = () => {
           </Col>
           <Col m={6} s={6}>
             <Card
-              className="black"
-              textClassName="white-text"
+              className="white"
               title="MBUSA Collision Position Statement"
               actions={[
                 <a href="positionstatement/MBUSA_Pos_Diagnostic-Repairs-following-a-Collision(1-17).pdf">
@@ -182,8 +170,7 @@ const positionStatement = () => {
           </Col>
           <Col m={12} s={12}>
             <Card
-              className="black center"
-              textClassName="white-text center"
+              className="white center"
               title="Hyundai Pre-Repair and Post-Repair"
               actions={[
                 <a href="positionstatement/Hyundai_Pre-Repair-and-Post-Repair-System-Scanning.pdf">
@@ -196,8 +183,7 @@ const positionStatement = () => {
           </Col>{" "}
           <Col m={12} s={12}>
             <Card
-              className="black center"
-              textClassName="white-text center"
+              className="white center"
               title="Mazda Scanning Position Statement"
               actions={[
                 <a href="positionstatement/Mazda-Scanning-Position-Statement.pdf">
