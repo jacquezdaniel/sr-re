@@ -8,14 +8,16 @@ function Navbar() {
         <nav>
           <div className="nav-wrapper white">
             <div className="container">
-              <Link to="/" class="brand-logo">
-                <img src="images/logo.png" width="150" height="55" alt="" />
+              <Link to="/">
+                <img
+                  src="images/logo.png"
+                  className="brand-logo"
+                  width="150"
+                  height="55"
+                  alt=""
+                />
               </Link>
-              <a
-                href="/"
-                data-target="mobile-menu"
-                className="sidenav-trigger right"
-              >
+              <a href="/" data-target="mobile-menu" className="sidenav-trigger">
                 <i className="material-icons">menu</i>
               </a>
               <ul id="nav-menu" class="right hide-on-med-and-down">
