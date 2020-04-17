@@ -17,11 +17,7 @@ function Navbar() {
                   alt=""
                 />
               </Link>
-              <a
-                href="/"
-                data-target="mobile-menu"
-                className="sidenav-trigger right"
-              >
+              <a href="/" data-target="mobile-menu" className="sidenav-trigger">
                 <i className="material-icons">menu</i>
               </a>
               <ul id="nav-menu" class="right hide-on-med-and-down">
