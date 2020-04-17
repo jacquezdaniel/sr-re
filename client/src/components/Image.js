@@ -75,20 +75,18 @@ class Image extends React.Component {
 
     return (
       <>
-        <div className="container">
-          <div
-            className="container z-depth-4"
-            data-aos="zoom-in"
-            data-aos-once="true"
-          >
-            <img
-              style={style}
-              src={`/files/read/${this.props.file.filename}`}
-              alt={this.props.file.metadata.alt}
-              onLoad={this.onLoad}
-            />
-            <figcaption>{this.props.file.metadata.caption}</figcaption>
-          </div>
+        <div
+          className="container z-depth-4"
+          data-aos="zoom-in"
+          data-aos-once="true"
+        >
+          <img
+            style={style}
+            src={`/files/read/${this.props.file.filename}`}
+            alt={this.props.file.metadata.alt}
+            onLoad={this.onLoad}
+          />
+          <figcaption>{this.props.file.metadata.caption}</figcaption>
         </div>
       </>
     );

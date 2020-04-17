@@ -6,13 +6,13 @@
 
 #image-container {
   columns: 20em 2;
-  padding: 2rem;
+  padding-top: 1rem;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 #image-container img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: auto;
   width: 100%;
 }
