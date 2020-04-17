@@ -8,26 +8,26 @@ class Form extends React.Component {
     selectedFile: null,
     fileName: "", // Used to update the file Input's label
     disableButton: true, // Used to toggle disables attribute of the submit button
-    inputKey: Date.now() // Used to re-render the file input on submit and validation
+    inputKey: Date.now(), // Used to re-render the file input on submit and validation
   };
 
   // Updates the file input's label to reflect the current file that is loaded
   // Called from validateFile() and handleSubmit()
-  updateLabel = file => {
+  updateLabel = (file) => {
     if (file) {
       this.setState({
-        fileName: file.name
+        fileName: file.name,
       });
     } else {
       this.setState({
-        fileName: "Choose File"
+        fileName: "Choose File",
       });
     }
   };
 
   // Checks if the file is one of the supported file formats
   // Called from handleInputChange
-  validateFile = file => {
+  validateFile = (file) => {
     if (!file.name) return;
 
     const a = file.name.split(".");
@@ -37,7 +37,7 @@ class Form extends React.Component {
     if (fileTypes.join().indexOf(fileType) !== -1) {
       this.setState({
         selectedFile: file,
-        disableButton: false
+        disableButton: false,
       });
       this.updateLabel(file);
     } else {
@@ -48,26 +48,26 @@ class Form extends React.Component {
       );
       this.setState({
         inputKey: Date.now(),
-        disableButton: true
+        disableButton: true,
       });
       this.updateLabel();
     }
   };
 
   // Handles the onChange event for the file input
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     this.validateFile(event.target.files[0]);
   };
 
   // Handles form submission
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData();
     formData.append("file", this.state.selectedFile);
     this.props.uploadFile(formData);
     this.setState({
       inputKey: Date.now(),
-      disableButton: true
+      disableButton: true,
     });
     this.updateLabel();
   };
@@ -94,10 +94,7 @@ class Form extends React.Component {
   }
 }
 
-export default connect(
-  null,
-  {
-    getFiles,
-    uploadFile
-  }
-)(Form);
+export default connect(null, {
+  getFiles,
+  uploadFile,
+})(Form);

@@ -12,7 +12,7 @@ class Parallax extends Component {
       <>
         <div className="parallax-container">
           <div
-            ref={Parallax => {
+            ref={(Parallax) => {
               this.Parallax1 = Parallax;
             }}
             className="parallax"

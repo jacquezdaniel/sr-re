@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Slider = props => {
+export const Slider = (props) => {
   return (
     <div className="slider">
       <ul className="slides z-depth-3">{props.children}</ul>
@@ -8,7 +8,7 @@ export const Slider = props => {
   );
 };
 
-export const SliderItem = props => {
+export const SliderItem = (props) => {
   return (
     <li>
       <img src={props.image} alt="" />

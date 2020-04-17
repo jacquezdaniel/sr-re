@@ -9,20 +9,20 @@ class positionStatement extends React.Component {
     this.state = {
       didLoad: false,
       title: this.props.file.metadata.title,
-      content: this.props.file.metadata.content
+      content: this.props.file.metadata.content,
     };
   }
   togglePdfUpdateModal = () => {
     this.setState({ pdfUpdateToggle: !this.state.pdfUpdateToggle });
   };
 
-  handleTitleInputChange = event => {
+  handleTitleInputChange = (event) => {
     this.setState({ title: event.target.value });
   };
-  handleContentInputChange = event => {
+  handleContentInputChange = (event) => {
     this.setState({ content: event.target.value });
   };
-  handlePdfFormSubmit = event => {
+  handlePdfFormSubmit = (event) => {
     event.preventDefault();
     const data = { title: this.state.title, content: this.state.content };
     this.props.pdfUpload(this.props.file.filename, data);
@@ -69,9 +69,6 @@ class positionStatement extends React.Component {
 }
 
 connect.PropTypes = {
-  pdfUrls: PropTypes.arrayOf(PropTypes.string).isRequired
+  pdfUrls: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
-export default connect(
-  null,
-  { deleteFile, updateFile }
-)(positionStatement);
+export default connect(null, { deleteFile, updateFile })(positionStatement);

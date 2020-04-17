@@ -15,7 +15,7 @@ class Image extends React.Component {
       didLoad: false,
       imageUpdateToggle: false,
       alt: this.props.file.metadata.alt,
-      caption: this.props.file.metadata.caption
+      caption: this.props.file.metadata.caption,
     };
   }
 
@@ -23,15 +23,15 @@ class Image extends React.Component {
     this.setState({ imageUpdateToggle: !this.state.imageUpdateToggle });
   };
 
-  handleAltInputChange = event => {
+  handleAltInputChange = (event) => {
     this.setState({ alt: event.target.value });
   };
 
-  handleCaptionInputChange = event => {
+  handleCaptionInputChange = (event) => {
     this.setState({ caption: event.target.value });
   };
 
-  handleImageUpdateFormSubmit = event => {
+  handleImageUpdateFormSubmit = (event) => {
     event.preventDefault();
     const data = { caption: this.state.caption, alt: this.state.alt };
     this.props.updateFile(this.props.file.filename, data);
@@ -40,7 +40,7 @@ class Image extends React.Component {
 
   onLoad = () => {
     this.setState({
-      didLoad: true
+      didLoad: true,
     });
   };
 
@@ -90,6 +90,6 @@ class Image extends React.Component {
 }
 
 connect.propTypes = {
-  imageUrls: PropTypes.arrayOf(PropTypes.string).isRequired
+  imageUrls: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default connect(null, { deleteFile, updateFile })(Image);

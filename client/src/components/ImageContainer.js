@@ -14,7 +14,7 @@ class ImageContainer extends React.Component {
   renderImages = () => {
     if (!this.props.files || this.props.files.length === 0) {
       return (
-        <p class="center">
+        <p id="spinner">
           <Preloader flashing />
         </p>
       );
@@ -40,12 +40,12 @@ class ImageContainer extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    files: Object.values(state.files)
+    files: Object.values(state.files),
   };
 };
 
 export default connect(mapStateToProps, {
-  getFiles
+  getFiles,
 })(ImageContainer);

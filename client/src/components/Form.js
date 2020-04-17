@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Input = props => {
+export const Input = (props) => {
   return (
     <div className={"input-field col " + (props.size ? props.size : "s12")}>
       <input

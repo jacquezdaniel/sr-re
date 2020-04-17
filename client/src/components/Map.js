@@ -4,25 +4,25 @@ import {
   withGoogleMap,
   withScriptjs,
   GoogleMap,
-  Marker
+  Marker,
 } from "react-google-maps";
 
 const Map = compose(
   withStateHandlers(
     () => ({
       isMarkerShown: true,
-      markerPosition: null
+      markerPosition: null,
     }),
     {
-      onMapClick: ({ isMarkerShown }) => e => ({
+      onMapClick: ({ isMarkerShown }) => (e) => ({
         markerPosition: e.latLng,
-        isMarkerShown: true
-      })
+        isMarkerShown: true,
+      }),
     }
   ),
   withScriptjs,
   withGoogleMap
-)(props => (
+)((props) => (
   <GoogleMap
     defaultZoom={16}
     defaultCenter={{ lat: 33.9928, lng: -117.3684 }}
@@ -50,7 +50,7 @@ class MapContainer extends Component {
                 height: `500px`,
                 width: `100%`,
                 marginLeft: `auto`,
-                marginRight: `auto`
+                marginRight: `auto`,
               }}
             />
           }
