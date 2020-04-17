@@ -20,14 +20,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -36,15 +36,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -85,14 +83,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -101,15 +99,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -133,14 +129,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -149,15 +145,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -182,14 +176,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -198,15 +192,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -234,14 +226,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -250,15 +242,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -280,14 +270,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -296,15 +286,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -324,14 +312,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -340,15 +328,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -373,14 +359,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -389,15 +375,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -418,14 +402,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -434,15 +418,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
@@ -464,14 +446,14 @@ const services = () => {
                 <Modal
                   actions={[
                     <Button
-                      className="indigo"
+                      className="indigo white-text"
                       flat
                       modal="close"
                       node="button"
                       waves="light"
                     >
                       Close
-                    </Button>
+                    </Button>,
                   ]}
                   bottomSheet={false}
                   fixedFooter={false}
@@ -480,15 +462,13 @@ const services = () => {
                   options={{
                     dismissible: true,
                     endingTop: "10%",
-                    inDuration: 400,
                     onCloseEnd: null,
                     onCloseStart: null,
                     onOpenEnd: null,
                     onOpenStart: null,
                     opacity: 0.5,
-                    outDuration: 400,
                     preventScrolling: true,
-                    startingTop: "4%"
+                    startingTop: "4%",
                   }}
                   trigger={
                     <Button className="indigo" node="button" waves="orange">
