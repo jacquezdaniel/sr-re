@@ -35,7 +35,7 @@
     "gridfs-stream": "^1.1.1",
     "if-env": "^1.0.4",
     "method-override": "^3.0.0",
-    "mongodb": "^3.5.6",
+    "mongodb": "^3.5.8",
     "mongoose": "^5.9.9",
     "mongoose-gridfs": "^1.2.36",
     "morgan": "^1.10.0",
