@@ -7,7 +7,7 @@ import {
   Slide,
   Card,
   CardTitle,
-  Col
+  Col,
 } from "react-materialize";
 import ScrollToTop from "react-scroll-up";
 import { ReactTinyLink } from "react-tiny-link";

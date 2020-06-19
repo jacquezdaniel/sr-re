@@ -9,6 +9,7 @@
   padding-top: 1rem;
   padding-left: 1px;
   padding-right: 1px;
+  min-width: 100%;
 }
 
 #image-container img {
