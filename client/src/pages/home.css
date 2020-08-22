@@ -4,12 +4,16 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+.parallax-container {
+  height: 45vh;
+}
+
+@media only screen and (max-width: 993px) {
   #parallax {
     min-width: 100%;
   }
   .parallax-container {
-    height: 200px;
+    height: 25vh;
   }
 }
 
