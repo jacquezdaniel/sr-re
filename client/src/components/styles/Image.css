@@ -5,10 +5,8 @@
 }
 
 #image-container {
-  columns: 20em 2;
-  padding-top: 1rem;
-  padding-left: 1px;
-  padding-right: 1px;
+  columns: 20rem 3;
+  padding: 2rem 1rem 1rem 2rem;
   min-width: 100%;
 }
 
@@ -16,6 +14,7 @@
   display: block;
   height: auto;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 #image-container figcaption {
