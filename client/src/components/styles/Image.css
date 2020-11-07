@@ -6,7 +6,7 @@
 
 #image-container {
   columns: 20rem 3;
-  padding: 2rem 1rem 1rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
   min-width: 100%;
 }
 
@@ -49,4 +49,11 @@
   left: 50%;
   margin-left: -50px;
   margin-top: -50px;
+}
+
+@media only screen and (max-width: 600px) {
+  #image-container {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 }
