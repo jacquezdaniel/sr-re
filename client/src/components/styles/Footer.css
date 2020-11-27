@@ -11,13 +11,10 @@
 }
 
 .page-footer {
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   padding-top: 1rem;
 }
 
 #footer-text {
-  font-size: 12px;
+  font-size: 10px;
 }

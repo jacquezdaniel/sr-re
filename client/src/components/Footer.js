@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="page-footer indigo darken-4">
       <div className="container center">
-        <p className="right">
+        <p>
           <a
             id="apple"
             href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
@@ -19,6 +19,8 @@ export default function Footer() {
               alt="apple"
             ></img>
           </a>
+        </p>
+        <p>
           <a
             id="google"
             href="https://play.google.com/store/apps/details?id=com.mobilesoft.superiorreplacement&hl=en_US"
@@ -32,23 +34,23 @@ export default function Footer() {
               alt="google"
             ></img>
           </a>
-        </p>
-        <p>
-          <a
-            id="facebook"
-            className="grey-text text-lighten-4"
-            href="https://www.facebook.com/superiorreplacement/"
-            target="_parent"
-          >
-            <p className="fa fa-facebook"></p>
-          </a>
-          <a
-            id="phone"
-            className="grey-text text-lighten-4"
-            href="tel:1-909-518-7269"
-          >
-            <p className="fa fa-phone"></p>
-          </a>
+          <p>
+            <a
+              id="facebook"
+              className="grey-text text-lighten-4"
+              href="https://www.facebook.com/superiorreplacement/"
+              target="_parent"
+            >
+              <p className="fa fa-facebook"></p>
+            </a>
+            <a
+              id="phone"
+              className="grey-text text-lighten-4"
+              href="tel:1-909-518-7269"
+            >
+              <p className="fa fa-phone"></p>
+            </a>
+          </p>
         </p>
       </div>
       <div className="container">
