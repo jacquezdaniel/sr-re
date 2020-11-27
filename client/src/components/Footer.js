@@ -53,10 +53,12 @@ export default function Footer() {
       </div>
       <div className="container">
         <div className="footer-copyright indigo darken-4">
-          © 2020 Superior Replacement. All rights reserved. The product/service
-          names listed in this document are marks and/or registered marks of
-          their respective owners and used under license. Unauthorized use
-          strictly prohibited.
+          <p id="footer-text">
+            © 2020 Superior Replacement. All rights reserved. The
+            product/service names listed in this document are marks and/or
+            registered marks of their respective owners and used under license.
+            Unauthorized use strictly prohibited.
+          </p>
         </div>
       </div>
     </div>
