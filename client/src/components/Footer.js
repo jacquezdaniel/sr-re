@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="page-footer indigo darken-4">
       <div className="container center">
-        <p className="center">
+        <p className="right">
           <a
             id="apple"
             href="https://apps.apple.com/us/app/superior-replacement/id1490284985"
@@ -33,9 +33,7 @@ export default function Footer() {
             ></img>
           </a>
         </p>
-      </div>
-      <div className="container">
-        <p className="center">
+        <p>
           <a
             id="facebook"
             className="grey-text text-lighten-4"
@@ -44,7 +42,6 @@ export default function Footer() {
           >
             <p className="fa fa-facebook"></p>
           </a>
-          Facebook Page
           <a
             id="phone"
             className="grey-text text-lighten-4"
@@ -52,12 +49,14 @@ export default function Footer() {
           >
             <p className="fa fa-phone"></p>
           </a>
-          Call Us
         </p>
       </div>
       <div className="container">
         <div className="footer-copyright indigo darken-4">
-          © 2020 Superior Replacement
+          © 2020 Superior Replacement. All rights reserved. The product/service
+          names listed in this document are marks and/or registered marks of
+          their respective owners and used under license. Unauthorized use
+          strictly prohibited.
         </div>
       </div>
     </div>
