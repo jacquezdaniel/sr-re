@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const enforce = require("express-sslify");
 const path = require("path");
 const logger = require("morgan");
@@ -15,6 +16,7 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
+app.use(cors({ origin: true }));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -25,10 +27,10 @@ if (process.env.NODE_ENV === "production") {
 mongoose
   .connect(keys.MONGO_URI, {
     useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
   })
   .then(() => console.log("MongoDB Atlas Connected"))
-  .catch(err => console.log(err));
+  .catch((err) => console.log(err));
 
 // Add routes for API and for database.
 app.use("/files", upload);
