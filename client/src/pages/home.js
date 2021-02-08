@@ -94,6 +94,7 @@ class home extends Component {
                   maxLine={2}
                   minLine={1}
                   url="https://www.ratchetandwrench.com/articles/8910-the-age-of-adas"
+                  proxyUrl="https://secret-scrubland-61559.herokuapp.com"
                 />
               </Col>
               <Col m={6} s={12}>
@@ -102,6 +103,7 @@ class home extends Component {
                   maxLine={2}
                   minLine={1}
                   url="https://www.ratchetandwrench.com/articles/8311-shop-relocates-to-perform-adas-calibrations"
+                  proxyUrl="https://secret-scrubland-61559.herokuapp.com"
                 />
               </Col>
             </div>
@@ -111,8 +113,8 @@ class home extends Component {
                   cardSize="small"
                   showGraphic={true}
                   maxLine={2}
-                  minLine={1}
                   url="https://www.repairerdrivennews.com/2020/07/14/qa-hyundai-oem-auto-body-repair-procedures/?fbclid=IwAR1P-MoTP-1LaGJqZcnJQWf_PoI_xWXkjx2M2YMA2ivVYAOrz_qAM0JjoNk"
+                  proxyUrl="https://secret-scrubland-61559.herokuapp.com"
                 />
               </Col>
               <Col m={4} s={12}>
@@ -123,6 +125,7 @@ class home extends Component {
                   maxLine={2}
                   minLine={1}
                   url="https://www.testdrivecopilot.com/blog/honda-sensing-system-test-drive-check-list?fbclid=IwAR2XV7BwXWezwekkSRFVKYTQ1C-o9PgWUo8zGYzCRtJgG-3uGDrr21IsL84"
+                  proxyUrl="https://secret-scrubland-61559.herokuapp.com"
                 />
               </Col>
               <Col m={4} s={12}>
@@ -132,6 +135,7 @@ class home extends Component {
                   maxLine={2}
                   minLine={1}
                   url="https://www.autobodynews.com/index.php/sps/item/20057-mobilesoft-technology-builds-b2b-app-for-so-cal-diagnostics-leader.html?fbclid=IwAR2Sw9xGgdMD2xdfiPoWcDeotqK4LLv56O08YL2YOfyg1i7-mRouHRIKMcw"
+                  proxyUrl="https://secret-scrubland-61559.herokuapp.com"
                 />
               </Col>
             </div>
