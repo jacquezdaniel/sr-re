@@ -10,7 +10,7 @@ let gfs;
 conn.once("open", () => {
   // init stream
   gfs = new mongoose.mongo.GridFSBucket(conn.db, {
-    bucketName: "uploads"
+    bucketName: "uploads",
   });
 });
 
@@ -35,10 +35,10 @@ router.get("/", (req, res) => {
     // check if files
     if (!files || files.length === 0) {
       return res.json({
-        files: false
+        files: false,
       });
     } else {
-      files.map(file => {
+      files.map((file) => {
         if (
           file.contentType === "image/png" ||
           file.contentType === "image/jpeg"
@@ -59,7 +59,7 @@ router.get("/:filename", (req, res) => {
   gfs.find({ filename: req.params.filename }, (err, file) => {
     if (!file || file.length === 0) {
       return res.status(404).json({
-        err: "That file doesn't exist"
+        err: "That file doesn't exist",
       });
     }
     return res.json(file);
@@ -70,12 +70,12 @@ router.get("/:filename", (req, res) => {
 router.get("/read/:filename", (req, res) => {
   gfs
     .find({
-      filename: req.params.filename
+      filename: req.params.filename,
     })
     .toArray((err, files) => {
       if (!files || files.length === 0) {
         return res.status(404).json({
-          err: "no files exist"
+          err: "no files exist",
         });
       }
       gfs.openDownloadStreamByName(req.params.filename).pipe(res);

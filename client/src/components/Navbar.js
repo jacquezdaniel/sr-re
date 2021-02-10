@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <div class="navbar-fixed">
+      <div className="navbar-fixed">
         <nav>
           <div className="nav-wrapper white">
             <div className="container">
@@ -20,7 +20,7 @@ function Navbar() {
               <a href="/" data-target="mobile-menu" className="sidenav-trigger">
                 <i className="material-icons">menu</i>
               </a>
-              <ul id="nav-menu" class="right hide-on-med-and-down">
+              <ul id="nav-menu" className="right hide-on-med-and-down">
                 <li>
                   <Link to="services">Services</Link>
                 </li>

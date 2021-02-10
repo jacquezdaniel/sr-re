@@ -3,7 +3,16 @@ import { connect } from "react-redux";
 import { getFiles } from "../actions";
 import "./styles/Image.css";
 import { Preloader } from "react-materialize";
+
 const Image = lazy(() => import("./Image"));
+
+const randomizer = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
 
 class ImageContainer extends React.Component {
   componentDidMount() {
@@ -12,6 +21,7 @@ class ImageContainer extends React.Component {
 
   // Maps files to be displayed in the #image-container
   renderImages = () => {
+    const shuffleImage = randomizer(this.props.files);
     if (!this.props.files || this.props.files.length === 0) {
       return (
         <p id="spinner" className="center">
@@ -20,7 +30,7 @@ class ImageContainer extends React.Component {
       );
     }
 
-    return this.props.files.map((file, i) => {
+    return shuffleImage.map((file, i) => {
       return (
         <Suspense
           fallback={
