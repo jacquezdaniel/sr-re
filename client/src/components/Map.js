@@ -42,7 +42,7 @@ class MapContainer extends Component {
     return (
       <div style={{ height: "100%" }}>
         <Map
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOpXqM4pr849cX6wKt5_6DSxGiMWnJ-fo"
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=LOLgtfo"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={
             <div
